@@ -24,5 +24,9 @@
 	<?php require 'views/portfolio.php'; ?>
 	<?php require 'views/form.php'; ?>
 
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/nav.js"></script>
+	<script src="skills.js"></script>
+	<script src="form.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <section id="profile">
-	<h1> Développeur web junior </h1>
+	<h2> Développeur web junior </h2>
 	<p> Aptitude à travailler en équipe, force de proposition et respectueux des bonnes pratiques de travail. Sens du relationnel. </p>
 	<a href="file/cv.pdf"> <img src="img/icon_pdf.png" alt="icône du format pdf" width="100" height="100"> Télécharger mon CV papier </a>
 

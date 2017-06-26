@@ -1,0 +1,47 @@
+@charset "UTF-8";
+header {
+  width: 100%;
+  background-image: url("../img/code.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 580px; }
+  header .navbar {
+    width: 100%;
+    /* le symbole hamburger du menu */ }
+    header .navbar .icon {
+      display: none; }
+    header .navbar li {
+      list-style-type: none; }
+      header .navbar li a {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 14px 16px;
+        float: left;
+        text-transform: uppercase; }
+      header .navbar li .me {
+        display: flex;
+        flex-direction: column; }
+
+@media screen and (max-width: 770px) {
+  .navbar a {
+    display: none; }
+    .navbar a .icon {
+      display: block !important;
+      float: right; } }
+@media screen and (max-width: 770px) {
+  .navbar .responsive {
+    position: relative;
+    /* correspond au menu déroulant sur petits supports */ }
+    .navbar .responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0; }
+    .navbar .responsive a {
+      float: none;
+      display: block;
+      text-align: center; } }
+
+/*# sourceMappingURL=header.css.map */

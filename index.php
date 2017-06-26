@@ -26,7 +26,7 @@
 
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/nav.js"></script>
-	<script src="skills.js"></script>
-	<script src="form.js"></script>
+	<script src="js/skills.js"></script>
+	<script src="js/form.js"></script>
 </body>
 </html>

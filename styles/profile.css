@@ -1,0 +1,26 @@
+.job, .accroche {
+  text-align: center; }
+
+.file {
+  display: inline-grid;
+  text-decoration: none; }
+
+.card {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 800px;
+  margin: auto;
+  height: 450px;
+  border-radius: 8px; }
+  .card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto; }
+  .card .infos {
+    padding: 0 16px; }
+    .card .infos .coordonnees {
+      column-count: 2; }
+      .card .infos .coordonnees li {
+        list-style-type: none; }
+
+/*# sourceMappingURL=profile.css.map */

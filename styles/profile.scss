@@ -1,0 +1,39 @@
+@mixin center($text-align) {
+	text-align: center;
+}
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+}
+
+.job, .accroche {@include center(center);}
+
+.file {
+	display: inline-grid;
+	text-decoration: none;
+}
+
+.card {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 800px;
+	margin: auto;
+	height: 450px;
+	@include border-radius(8px);
+
+	img {
+		width: 200px;
+		height: 200px;
+		@include border-radius(50%);
+		margin: auto;
+	}
+
+	.infos {
+		padding: 0 16px;
+
+		.coordonnees {
+			li {list-style-type: none;}
+
+			column-count: 2;
+		}
+	}
+}

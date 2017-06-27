@@ -1,12 +1,12 @@
 <section id="profile">
-	<h2> Développeur web junior </h2>
-	<p> Aptitude à travailler en équipe, force de proposition et respectueux des bonnes pratiques de travail. Sens du relationnel. </p>
-	<a href="file/cv.pdf"> <img src="img/icon_pdf.png" alt="icône du format pdf" width="100" height="100"> Télécharger mon CV papier </a>
+	<h2 class="job"> Développeur web junior </h2>
+	<p class="accroche"> Aptitude à travailler en équipe, force de proposition et respectueux des bonnes pratiques de travail. Sens du relationnel. </p>
+	<a href="file/cv.pdf" class="file"> <img src="img/icon_pdf.png" alt="icône du format pdf" width="100" height="100"> Télécharger mon <br> CV papier </a>
 
 	<div class="card">
-		<img src="img/abdoulaye.jpg" alt="ma photo" width="150" height="150">
-		<div>
-			<ul>
+		<img src="img/abdoulaye.jpg" alt="ma photo">
+		<div class="infos">
+			<ul class="coordonnees">
 				<li> abdoulaye dabo </li>
 				<li> 28 ans </li>
 				<li> 156 rue des poissonniers </li>

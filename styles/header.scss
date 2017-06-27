@@ -9,13 +9,11 @@ header {
 
 	.navbar {
 		@include width(100%);
-		.icon {display: none;} /* le symbole hamburger du menu */
 
 		li {
 			list-style-type: none;
 
 			a {
-				display: inline-block;
 				text-decoration: none;
 				color: white;
 				font-size: 18px;
@@ -29,6 +27,8 @@ header {
 				display: flex;
 				flex-direction: column;
 			}
+
+			.icon {display: none;} /* le symbole hamburger du menu */
 		}
 	}
 }
@@ -37,12 +37,12 @@ header {
 	.navbar {
 		a {
 			display: none;
+		}
 
-			.icon {
+		.icon {
 				display: block !important;
 				float: right;
 			}
-		}
 	}
 }
 

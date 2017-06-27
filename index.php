@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title> Abdoulaye DABO, développeur web </title>
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
 	<link rel="stylesheet" type="text/css" href="styles/header.css">
 	<link rel="stylesheet" type="text/css" href="styles/profile.css">
 	<link rel="stylesheet" type="text/css" href="styles/skills.css">

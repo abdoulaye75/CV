@@ -1,0 +1,40 @@
+@mixin flex($flex, $space) {
+	display: $flex;
+	justify-content: $space;
+}
+
+@mixin list-style($type, $letter) {
+	list-style-type: $type;
+	text-transform: $letter;
+}
+
+.skills {
+	@include flex(flex, center);
+
+	.languages, .frameworks {width: 45%;}
+
+	li {
+		@include list-style(none, uppercase);
+		line-height: 40px;
+
+		.myProgress {
+			margin-left: 10px;
+			width: 100%;
+			background-color: #2AB27B;
+			line-height: 2em;
+			height: 30px;
+
+			.level {
+				text-align: center;
+				color: #fff;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.annex {
+	li {@include list-style(none, uppercase);}
+	@include flex(flex, space-around);
+	flex-wrap: wrap;
+}

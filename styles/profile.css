@@ -1,26 +1,39 @@
 .job, .accroche {
   text-align: center; }
 
-.file {
-  display: inline-grid;
-  text-decoration: none; }
-
 .card {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 800px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+  width: 66%;
   margin: auto;
-  height: 450px;
+  height: 350px;
   border-radius: 8px; }
-  .card img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: auto; }
+  .card .images {
+    display: flex;
+    justify-content: space-between; }
+    .card .images .file {
+      display: inline-grid;
+      text-decoration: none; }
+    .card .images img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: auto; }
+    .card .images .pdf {
+      width: 100px;
+      height: 100px; }
   .card .infos {
-    padding: 0 16px; }
-    .card .infos .coordonnees {
-      column-count: 2; }
-      .card .infos .coordonnees li {
-        list-style-type: none; }
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .card .infos li {
+      list-style-type: none; }
+
+@media screen and (max-width: 820px) {
+  .card {
+    height: 450px; } }
+@media screen and (max-width: 420px) {
+  .card {
+    width: 90%; } }
 
 /*# sourceMappingURL=profile.css.map */

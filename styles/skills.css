@@ -1,29 +1,29 @@
-.skills {
-  display: flex;
-  justify-content: center; }
-  .skills .languages, .skills .frameworks {
-    width: 45%; }
-  .skills li {
-    list-style-type: none;
-    text-transform: uppercase;
-    line-height: 40px; }
-    .skills li .myProgress {
-      margin-left: 10px;
-      width: 100%;
-      background-color: #2AB27B;
-      line-height: 2em;
-      height: 30px; }
-      .skills li .myProgress .level {
-        text-align: center;
-        color: #fff;
-        font-weight: bold; }
-
-.annex {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; }
-  .annex li {
-    list-style-type: none;
-    text-transform: uppercase; }
+.main_skills {
+  background-color: #ccc; }
+  .main_skills .skills {
+    display: flex;
+    justify-content: center; }
+    .main_skills .skills .languages, .main_skills .skills .frameworks {
+      width: 45%; }
+    .main_skills .skills li {
+      list-style-type: none;
+      text-transform: uppercase;
+      line-height: 40px; }
+      .main_skills .skills li .myProgress {
+        width: 100%;
+        background-color: #2AB27B;
+        line-height: 2em;
+        height: 30px; }
+        .main_skills .skills li .myProgress .level {
+          text-align: center;
+          color: #fff;
+          font-weight: bold; }
+  .main_skills .annex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .main_skills .annex li {
+      list-style-type: none;
+      text-transform: uppercase; }
 
 /*# sourceMappingURL=skills.css.map */

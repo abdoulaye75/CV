@@ -1,4 +1,4 @@
-<section id="cv">
+<section id="cv" class="main_skills">
 	<h3> Compétences techniques : </h3>
 	<div class="skills">
 		<div class="languages">

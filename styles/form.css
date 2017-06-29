@@ -1,0 +1,42 @@
+.form-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px; }
+  .form-container input[type=text], .form-container input[type=email], .form-container textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px; }
+  .form-container textarea {
+    height: 200px; }
+  .form-container .error, .form-container .success {
+    display: none; }
+  .form-container button[type=submit] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    cursor: pointer; }
+    .form-container button[type=submit]:hover {
+      background-color: #fff;
+      color: #4CAF50;
+      border: 1px solid #4CAF50;
+      transition: 0.3s; }
+  .form-container button[type=reset] {
+    background-color: #FF47A7;
+    color: #fff;
+    padding: 12px 20px;
+    border: 1px solid #FF47A7;
+    border-radius: 4px;
+    cursor: pointer; }
+    .form-container button[type=reset]:hover {
+      background-color: #fff;
+      color: #FF47A7;
+      border: 1px solid #FF47A7;
+      transition: 0.3s; }
+
+/*# sourceMappingURL=form.css.map */

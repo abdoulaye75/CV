@@ -1,0 +1,16 @@
+.realisations {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+	#site1 {background:{image : url("../img/place_des_cliches.png"); repeat : no-repeat; size : cover;}}
+
+	#site2 {background:{image : url("../img/cms.png"); repeat : no-repeat; size : cover;}}
+
+	.realisation {
+		width: 45%;
+		height: 300px;
+
+		.description {display: none;}
+	}
+}

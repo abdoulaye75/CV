@@ -1,0 +1,51 @@
+@mixin button($bg-color, $color, $padding, $border, $radius, $mouse) {
+	background-color: $bg-color;
+    color: $color;
+    padding: $padding;
+    border: $border;
+    border-radius: $radius;
+    cursor: $mouse;
+}
+
+@mixin hover($bg-color, $color, $border, $transition) {
+	background-color: $bg-color;
+    color: $color;
+    border: $border;
+    transition: $transition;
+}
+
+.form-container {
+	border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+
+    input[type=text], input[type=email], textarea {
+    	width: 100%;
+    	padding: 12px;
+    	border: 1px solid #ccc;
+    	border-radius: 4px;
+    	box-sizing: border-box;
+    	margin-top: 6px;
+    	margin-bottom: 16px;
+    }
+
+    textarea {height: 200px;}
+
+    .error, .success {display: none;}
+
+    button[type=submit] {
+    	@include button(#4CAF50, #fff, 12px 20px, 1px solid #4CAF50, 4px, pointer);
+
+	    &:hover {
+		    @include hover(#fff, #4CAF50, 1px solid #4CAF50, 0.3s);
+		}
+    }
+
+    button[type=reset] {
+    	@include button(#FF47A7, #fff, 12px 20px, 1px solid #FF47A7, 4px, pointer);
+
+	    &:hover {
+		    @include hover(#fff, #FF47A7, 1px solid #FF47A7, 0.3s);
+		}
+    }
+}

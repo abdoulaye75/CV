@@ -6,7 +6,19 @@
 	border-radius: $radius;
 }
 
+$text-color: #555;
+$text-size: 14px;
+$family: 'Source Serif Pro', serif;
+
 .job, .accroche {@include center(center);}
+
+.job {color: $text-color;}
+
+.accroche {
+	color: $text-color;
+	font-size: $text-size;
+	font-family: $family;
+}
 
 .card {
 	box-shadow: 0 4px 20px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.2);
@@ -43,7 +55,14 @@
 		justify-content: space-around;
 		flex-wrap: wrap;
 
-		li {list-style-type: none;}
+		li {
+			list-style-type: none;
+			color: $text-color;
+			font-size: $text-size;
+			font-family: $family;
+
+			a {text-decoration: none;}
+		}
 	}
 }
 

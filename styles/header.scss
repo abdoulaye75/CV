@@ -6,6 +6,7 @@ header {
 	@include width(100%);
 	background:{image : url("../img/code.jpg"); repeat : no-repeat; size : cover;};
 	height: 580px;
+	margin-top: -16px;
 
 	.navbar {
 		@include width(100%);

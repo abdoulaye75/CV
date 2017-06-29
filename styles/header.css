@@ -4,7 +4,8 @@ header {
   background-image: url("../img/code.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 580px; }
+  height: 580px;
+  margin-top: -16px; }
   header .navbar {
     width: 100%; }
     header .navbar li {

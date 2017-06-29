@@ -1,5 +1,5 @@
 <section id="profile">
-	<h2 class="job"> Développeur web junior </h2>
+	<h1 class="job"> Développeur web junior </h1>
 	<p class="accroche"> Aptitude à travailler en équipe, force de proposition et respectueux des bonnes pratiques de travail. Sens du relationnel. </p>
 
 	<div class="card">
@@ -10,11 +10,11 @@
 		<div class="infos">
 			<div>
 				<ul>
-					<li> abdoulaye dabo </li>
+					<li> Abdoulaye DABO </li>
 					<li> 28 ans </li>
 					<li> 156 rue des poissonniers </li>
 					<li> 75018 </li>
-					<li> paris </li>
+					<li> Paris </li>
 				</ul>
 			</div>
 

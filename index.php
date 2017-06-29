@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/hobbies.css">
 	<link rel="stylesheet" type="text/css" href="styles/portfolio.css">
 	<link rel="stylesheet" type="text/css" href="styles/form.css">
+	 <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet"> 
 	<link rel="icon" type="image/jpg" href="img/abdoulaye.jpg">
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>

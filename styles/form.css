@@ -9,7 +9,10 @@
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 16px; }
+    margin-bottom: 16px;
+    font-family: 'Source Serif Pro', serif; }
+    .form-container input[type=text]:focus, .form-container input[type=email]:focus, .form-container textarea:focus {
+      border: 3px solid #555; }
   .form-container textarea {
     height: 200px; }
   .form-container .error, .form-container .success {
@@ -27,16 +30,16 @@
       border: 1px solid #4CAF50;
       transition: 0.3s; }
   .form-container button[type=reset] {
-    background-color: #FF47A7;
+    background-color: #FF0000;
     color: #fff;
     padding: 12px 20px;
-    border: 1px solid #FF47A7;
+    border: 1px solid #FF0000;
     border-radius: 4px;
     cursor: pointer; }
     .form-container button[type=reset]:hover {
       background-color: #fff;
-      color: #FF47A7;
-      border: 1px solid #FF47A7;
+      color: #FF0000;
+      border: 1px solid #FF0000;
       transition: 0.3s; }
 
 /*# sourceMappingURL=form.css.map */

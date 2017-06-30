@@ -27,6 +27,11 @@
     	box-sizing: border-box;
     	margin-top: 6px;
     	margin-bottom: 16px;
+    	font-family: 'Source Serif Pro', serif;
+
+    	&:focus {
+    		border: 3px solid #555;
+    	}
     }
 
     textarea {height: 200px;}
@@ -42,10 +47,8 @@
     }
 
     button[type=reset] {
-    	@include button(#FF47A7, #fff, 12px 20px, 1px solid #FF47A7, 4px, pointer);
+    	@include button(#FF0000, #fff, 12px 20px, 1px solid #FF0000, 4px, pointer);
 
-	    &:hover {
-		    @include hover(#fff, #FF47A7, 1px solid #FF47A7, 0.3s);
-		}
+	    &:hover {@include hover(#fff, #FF0000, 1px solid #FF0000, 0.3s);}
     }
 }

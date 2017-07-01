@@ -1,4 +1,4 @@
-<section>
+<section class="timeline-container" style="background-color: lightcoral;">
 	<div class="timeline-block">
 		<div class="date"> 2017 </div>
 		<div class="timeline-content">

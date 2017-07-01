@@ -24,6 +24,7 @@
 
 	<h3> Compétences annexes : </h3>
 	<ul class="annex">
+		<li> ligne de commande linux </li>
 		<li> ui / ux </li>
 		<li> uml </li>
 		<li> wordpress </li>

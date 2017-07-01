@@ -1,6 +1,6 @@
 <section id="timeline" class="timeline-container">
 	<div class="timeline-block">
-		<div class="date"> Juin - Juillet 2017 </div>
+		<p class="date"> Juin - Juillet 2017 </p>
 		<div class="timeline-content">
 			<h2> Développeur web stagiaire chez Be Relax </h2>
 			<p> développement d’un intranet en Wordpress et PHP </p>
@@ -8,7 +8,7 @@
 	</div>
 
 	<div class="timeline-block">
-		<div class="date"> 2017 </div>
+		<p class="date"> Mai 2017 </p>
 		<div class="timeline-content">
 			<h2> Animation d'un atelier de 2 heures d'initiation au code </h2>
 			<p> animation : Initiation au langage HTML/CSS via la plateforme cloud9 assistance à l'animation et aux participants (employés de Moët Hennessy issus de différents services (marketing, communication, informatique, etc)) </p>
@@ -16,7 +16,7 @@
 	</div>
 
 	<div class="timeline-block">
-		<div class="date"> Janvier 2017 - aujourd'hui </div>
+		<p class="date"> Janvier 2017 - aujourd'hui </p>
 		<div class="timeline-content">
 			<h2> Projets web dans le cadre de la formation </h2>
 			<ul>
@@ -36,7 +36,7 @@
 	</div>
 
 	<div class="timeline-block">
-		<div class="date"> Mars 2014 - Novembre 2016 </div>
+		<p class="date"> Mars 2014 - Novembre 2016 </p>
 		<div class="timeline-content">
 			<h2> Agent d’accueil chez City One Accueil Passager </h2>
 			<p> accueil, renseignements et orientation des voyageurs vers les transports de substitution </p>

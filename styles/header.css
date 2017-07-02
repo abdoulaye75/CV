@@ -12,7 +12,7 @@ header {
     header .navbar li {
       list-style-type: none;
       /* le symbole hamburger du menu */ }
-      header .navbar li a {
+      header .navbar li .navlink {
         text-decoration: none;
         color: white;
         font-size: 18px;
@@ -27,22 +27,47 @@ header {
         display: none; }
 
 @media screen and (max-width: 770px) {
-  .navbar a {
+  .navlink, .me {
     display: none; }
-  .navbar .icon {
-    display: block !important;
-    float: right; } }
-@media screen and (max-width: 770px) {
-  .navbar .responsive {
+
+  .icon {
     position: relative;
-    /* correspond au menu déroulant sur petits supports */ }
-    .navbar .responsive .icon {
+    height: 30px;
+    width: 30px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    cursor: pointer; }
+    .icon span {
+      height: 3px;
+      background-color: #fff;
+      width: 100%;
       position: absolute;
-      right: 0;
-      top: 0; }
-    .navbar .responsive a {
-      float: none;
-      display: block;
-      text-align: center; } }
+      top: 20px;
+      left: 0; }
+      .icon span::before {
+        content: '';
+        height: 3px;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+        top: -10px;
+        left: 0; }
+      .icon span::after {
+        content: '';
+        height: 3px;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0; } }
+/* correspond au menu déroulant sur petits supports */
+.responsive .navlink, .responsive .me {
+  float: none;
+  display: block;
+  text-align: center;
+  transition-duration: 0.3s;
+  padding: 30px 0 0 0;
+  position: relative; }
 
 /*# sourceMappingURL=header.css.map */

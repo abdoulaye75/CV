@@ -15,7 +15,7 @@ header {
 		li {
 			list-style-type: none;
 
-			a {
+			.navlink {
 				text-decoration: none;
 				color: white;
 				font-size: 18px;
@@ -36,36 +36,59 @@ header {
 }
 
 @media screen and (max-width: 770px) {
-	.navbar {
-		a {
-			display: none;
-		}
 
-		.icon {
-				display: block !important;
-				float: right;
-			}
-	}
-}
+	.navlink, .me {display: none;}
 
-@media screen and (max-width: 770px) {
+	.icon {
+		position: relative;
+		height: 30px;
+		width: 30px;
+		float: right;
+		margin-right: 10px;
+		margin-top: 5px;
+		cursor: pointer;
 
-	.navbar {	
-		.responsive {
-			position: relative;
+		span {
+			height: 3px;
+			background-color: #fff;
+			width: 100%;
+			position: absolute;
+			top: 20px;
+			left: 0;
 
-			.icon {
+			&::before {
+				content: '';
+				height: 3px;
+				background-color: #fff;
+				width: 100%;
 				position: absolute;
-				right: 0;
-				top: 0;
+				top: -10px;
+				left: 0;
 			}
 
-			/* correspond au menu déroulant sur petits supports */
-			a {
-				float: none;
-				display: block;
-				text-align: center;
+			&::after {
+				content: '';
+				height: 3px;
+				background-color: #fff;
+				width: 100%;
+				position: absolute;
+				top: 10px;
+				left: 0;	
 			}
 		}
 	}
+
+
 }
+
+/* correspond au menu déroulant sur petits supports */
+	.responsive {
+		.navlink, .me {
+			float: none;
+			display: block;
+			text-align: center;
+			transition-duration: 0.3s;
+			padding: 30px 0 0 0;
+			position: relative;
+		}
+	}

@@ -1,27 +1,15 @@
 .timeline-container {
   background-color: #E9F0F5;
-  margin-top: -16px; }
-  .timeline-container::after {
-    content: '';
-    display: table;
-    clear: both; }
+  margin-top: -16px;
+  padding-top: 15px;
+  padding-bottom: 15px; }
   .timeline-container .timeline-block {
-    position: relative;
     margin: 2em 0;
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap; }
-    .timeline-container .timeline-block:nth-child(even) .timeline-container .timeline-block {
-      float: right; }
     .timeline-container .timeline-block:first-child {
       margin-top: 0; }
-    .timeline-container .timeline-block:last-child {
-      margin-bottom: 0; }
-    @media only screen and (min-width: 1170px) {
-      .timeline-container .timeline-block:first-child {
-        margin-top: 0; }
-      .timeline-container .timeline-block:last-child {
-        margin-bottom: 0; } }
     .timeline-container .timeline-block .date {
       border-radius: 50%;
       border: 1px solid #39D1B4;
@@ -35,17 +23,29 @@
       font-family: "Source Serif Pro", serif; }
     .timeline-container .timeline-block .timeline-content {
       position: relative;
-      margin-left: 60px;
       background: #fff;
       border-radius: 8px;
       padding: 1em;
-      box-shadow: 0 3px 0 #d7e4ed; }
+      box-shadow: 0 3px 0 #d7e4ed;
+      margin-left: 20px;
+      padding: 1.6em;
+      width: 45%;
+      border-top: 10px solid lightblue; }
       .timeline-container .timeline-block .timeline-content h2 {
         color: #303e49; }
       .timeline-container .timeline-block .timeline-content p, .timeline-container .timeline-block .timeline-content li {
         margin: 1em 0;
         line-height: 1.6;
         font-family: "Source Serif Pro", serif; }
+      .timeline-container .timeline-block .timeline-content li {
+        list-style-type: none; }
+        .timeline-container .timeline-block .timeline-content li::before {
+          content: '';
+          height: 0;
+          width: 0;
+          border: 5px solid lightcoral;
+          border-right: 10px solid lightcoral;
+          margin-right: 15px; }
       .timeline-container .timeline-block .timeline-content::before {
         content: '';
         position: absolute;
@@ -55,15 +55,5 @@
         width: 0;
         border: 25px solid transparent;
         border-right: 25px solid #fff; }
-      @media only screen and (min-width: 768px) {
-        .timeline-container .timeline-block .timeline-content h2 {
-          font-size: 20px; }
-        .timeline-container .timeline-block .timeline-content p {
-          font-size: 16px; } }
-      @media only screen and (min-width: 1170px) {
-        .timeline-container .timeline-block .timeline-content {
-          margin-left: 20px;
-          padding: 1.6em;
-          width: 45%; } }
 
 /*# sourceMappingURL=experience.css.map */

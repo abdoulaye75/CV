@@ -29,23 +29,27 @@ $family: 'Source Serif Pro', serif;
 
 	.images {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
+		padding-top: 15px;
 
 		.file {
-			display: inline-grid;
 			text-decoration: none;
+			color: #fff;
+			display: table;
+			border: 1px solid lightcoral;
+			background-color: lightcoral;
+			padding: 10px;
 		}
 
 		img {
 			width: 200px;
 			height: 200px;
 			@include border-radius(50%);
-			margin: auto;
 		}
 
 		.pdf {
-			width: 100px;
-			height: 100px;
+			width: 50px;
+			height: 50px;
 		}
 	}
 
@@ -61,7 +65,10 @@ $family: 'Source Serif Pro', serif;
 			font-size: $text-size;
 			font-family: $family;
 
-			a {text-decoration: none;}
+			a {
+				text-decoration: none;
+				color: #0D4D9A;
+			}
 		}
 	}
 }

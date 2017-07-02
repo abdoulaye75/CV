@@ -13,80 +13,57 @@ $family: 'Source Serif Pro', serif;
 	font-family: $font;
 }
 
-$small-device: 320px;   
-$medium-device: 768px;     
-$large-device: 1170px;     
-
-@mixin MQ($canvas) {
-  @if $canvas == small-device {
-   @media only screen and (min-width: $small-device) { @content; } 
-  }
-  @else if $canvas == medium-device {
-   @media only screen and (min-width: $medium-device) { @content; } 
-  }
-  @else if $canvas == large-device {
-   @media only screen and (min-width: $large-device) { @content; } 
-  }
-}
-
 .timeline-container {
 	background-color: #E9F0F5;
 	margin-top: -16px;
-
-	&::after {
-	    content: '';
-	    display: table;
-	    clear: both;
-  	}
+	padding-top: 15px;
+	padding-bottom: 15px;
 
   	.timeline-block {
-	  position: relative;
 	  margin: 2em 0;
 	  display: flex;
 	  justify-content: space-around;
 	  flex-wrap: nowrap;
 
-	  &:nth-child(even) & {
-			float: right;
-		}
-
 	  &:first-child {
 	    margin-top: 0;
-	  }
-
-	  &:last-child {
-	    margin-bottom: 0;
-	  }
-
-	  @include MQ(large-device) {
-	    &:first-child {
-	      margin-top: 0;
-	    }
-
-	    &:last-child {
-	      margin-bottom: 0;
-	    }
 	  }
 
 	  .date {@include date;}
 
 		.timeline-content {
 			  position: relative;
-			  margin-left: 60px;
 			  background: #fff;
 			  border-radius: 8px;
 			  padding: 1em;
 			  box-shadow: 0 3px 0 darken(#e9f0f5, 5%);
+			  margin-left: 20px;
+			  padding: 1.6em;
+			  width: 45%;
+			  border-top: 10px solid lightblue;
 
 			  h2 {
 			    color: #303e49;
-			  }
+			}
 
 			  p, li {
 			    margin: 1em 0;
 			    line-height: 1.6;
 				font-family: $family;
-			  }
+			}
+
+			li {
+				list-style-type: none;
+
+				&::before {
+					content: '';
+				    height: 0;
+				    width: 0;
+				    border: 5px solid lightcoral;
+				    border-right: 10px solid lightcoral;
+				    margin-right: 15px;
+				}
+			}
 
 			  &::before {
 			    content: '';
@@ -97,23 +74,7 @@ $large-device: 1170px;
 			    width: 0;
 			    border: 25px solid transparent;
 			    border-right: 25px solid #fff;
-			  }
-
-			  @include MQ(medium-device) {
-				    h2 {
-				      font-size: 20px;
-				    }
-
-				    p {
-				      font-size: 16px;
-				    }
-			    }
-
-			  @include MQ(large-device) {
-			    margin-left: 20px;
-			    padding: 1.6em;
-			    width: 45%;
 			}
+		}
 	}
-}
 }

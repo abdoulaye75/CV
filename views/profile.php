@@ -5,7 +5,7 @@
 	<div class="card">
 		<div class="images">
 			<img src="img/abdoulaye.jpg" alt="ma photo">
-			<a href="file/cv.pdf" class="file"> <img src="img/icon_pdf.png" alt="icône du format pdf" class="pdf"> Télécharger mon <br> CV papier </a>
+			<a href="file/cv.pdf" class="file"> <img src="img/icon_pdf.png" alt="icône du format pdf" class="pdf"> Télécharger mon CV papier </a>
 		</div>
 		<div class="infos">
 			<div>

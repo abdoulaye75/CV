@@ -17,13 +17,16 @@
     height: 200px; }
   .form-container .error, .form-container .success {
     display: none; }
+  .form-container .error {
+    color: red; }
+  .form-container .success {
+    color: green; }
   .form-container button[type=submit] {
     background-color: #4CAF50;
     color: #fff;
     padding: 12px 20px;
     border: 1px solid #4CAF50;
-    border-radius: 4px;
-    cursor: pointer; }
+    border-radius: 4px; }
     .form-container button[type=submit]:hover {
       background-color: #fff;
       color: #4CAF50;
@@ -34,8 +37,7 @@
     color: #fff;
     padding: 12px 20px;
     border: 1px solid #FF0000;
-    border-radius: 4px;
-    cursor: pointer; }
+    border-radius: 4px; }
     .form-container button[type=reset]:hover {
       background-color: #fff;
       color: #FF0000;

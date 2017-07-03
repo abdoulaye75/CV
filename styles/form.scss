@@ -1,10 +1,9 @@
-@mixin button($bg-color, $color, $padding, $border, $radius, $mouse) {
+@mixin button($bg-color, $color, $padding, $border, $radius) {
 	background-color: $bg-color;
     color: $color;
     padding: $padding;
     border: $border;
     border-radius: $radius;
-    cursor: $mouse;
 }
 
 @mixin hover($bg-color, $color, $border, $transition) {
@@ -38,8 +37,11 @@
 
     .error, .success {display: none;}
 
+    .error {color: red;}
+    .success {color: green;}
+
     button[type=submit] {
-    	@include button(#4CAF50, #fff, 12px 20px, 1px solid #4CAF50, 4px, pointer);
+    	@include button(#4CAF50, #fff, 12px 20px, 1px solid #4CAF50, 4px);
 
 	    &:hover {
 		    @include hover(#fff, #4CAF50, 1px solid #4CAF50, 0.3s);
@@ -47,7 +49,7 @@
     }
 
     button[type=reset] {
-    	@include button(#FF0000, #fff, 12px 20px, 1px solid #FF0000, 4px, pointer);
+    	@include button(#FF0000, #fff, 12px 20px, 1px solid #FF0000, 4px);
 
 	    &:hover {@include hover(#fff, #FF0000, 1px solid #FF0000, 0.3s);}
     }

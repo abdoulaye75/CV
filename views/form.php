@@ -26,7 +26,9 @@
 		<span class="error" id="errorMessage"> Message vide </span>
 		<span class="success" id="successMessage"> Message rempli </span>
 
-		<button type="submit" id="submitForm" disabled> Envoyer </button>
+		<button type="submit" id="submitForm"> Envoyer </button>
 		<button type="reset" id="resetForm" disabled> Tout effacer </button>
 	</form>
+
+	<?php require 'validation_server.php'; ?>
 </section>

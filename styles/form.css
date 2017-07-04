@@ -43,5 +43,27 @@
       color: #FF0000;
       border: 1px solid #FF0000;
       transition: 0.3s; }
+  .form-container .alert {
+    padding: 20px;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+    margin-top: 10px; }
+  .form-container .successful {
+    background-color: #4CAF50; }
+  .form-container .fail {
+    background-color: #f44336; }
+  .form-container .btnclose {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s; }
+    .form-container .btnclose:hover {
+      color: #000; }
 
 /*# sourceMappingURL=form.css.map */

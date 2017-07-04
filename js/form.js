@@ -77,12 +77,22 @@ message.addEventListener("input", function(e) {
 	}
 });
 
-if ((lastname.length >= 2) && (firstname.length >= 2) && (regexMail.test(mail)) && (subject !== "") && (message !== "")) {
-	submitForm.disabled = false;
-	submitForm.style.cursor = "pointer";
-}
+// if ((lastname.length >= 2) && (firstname.length >= 2) && (regexMail.test(mail)) && (subject !== "") && (message !== "")) {
+// 	submitForm.disabled = false;
+// 	submitForm.style.cursor = "pointer";
+// }
 
 if ((lastname !== "") || (firstname !== "") || (mail !== "") || (subject !== "") || (message !== "")) {
 	resetForm.disabled = false;
 	resetForm.style.cursor = "pointer";
 }
+
+let close = document.querySelector('.btnclose');
+let alertElt = document.querySelector('.alert');
+
+close.addEventListener("click", function() {
+	alertElt.style.opacity = 0;
+	setTimeout(function() {
+		alertElt.style.display = "none";
+	}, 600);
+});

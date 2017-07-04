@@ -3,7 +3,10 @@
 		<p class="date"> Juin - Juillet 2017 </p>
 		<div class="timeline-content">
 			<h2> Développeur web stagiaire chez Be Relax </h2>
-			<p> développement d’un intranet en Wordpress et PHP </p>
+			<ul>
+				<li> développement d’un intranet en Wordpress et PHP </li>
+				<li> développement d'un back-office pour un site existant (<a href="http://www.cup-orly.fr/" target="_blank"> Cup Orly </a>) </li>
+			</ul>
 		</div>
 	</div>
 

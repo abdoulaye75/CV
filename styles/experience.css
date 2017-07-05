@@ -46,6 +46,9 @@
           border: 5px solid lightcoral;
           border-right: 10px solid lightcoral;
           margin-right: 15px; }
+        .timeline-container .timeline-block .timeline-content li a {
+          color: #0D4D9A;
+          text-decoration: none; }
       .timeline-container .timeline-block .timeline-content::before {
         content: '';
         position: absolute;

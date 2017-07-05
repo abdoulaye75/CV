@@ -8,10 +8,12 @@
 	text-transform: $letter;
 }
 
-h3 {color: #323E4E;}
+h3 {color: #fff;}
 
 .main_skills {
-	background-color: #ccc;
+	background-color: #0F1721;
+	padding: 15px;
+
 	.skills {
 		@include flex(flex, center);
 
@@ -20,7 +22,7 @@ h3 {color: #323E4E;}
 		li {
 			@include list-style(none, uppercase);
 			line-height: 40px;
-			color: #323E4E;
+			color: #fff;
 			font-weight: 700;
 
 			.myProgress {
@@ -41,9 +43,11 @@ h3 {color: #323E4E;}
 	.annex {
 		li {
 			@include list-style(none, uppercase);
-			background-color: #365D95;
+			background-color: #ED1C40;
 			color: #fff;
 			padding: 15px;
+			border-radius: 8px;
+			font-weight: bold;
 		}
 
 		@include flex(flex, space-around);

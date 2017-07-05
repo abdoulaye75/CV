@@ -1,8 +1,9 @@
 h3 {
-  color: #323E4E; }
+  color: #fff; }
 
 .main_skills {
-  background-color: #ccc; }
+  background-color: #0F1721;
+  padding: 15px; }
   .main_skills .skills {
     display: flex;
     justify-content: center; }
@@ -12,7 +13,7 @@ h3 {
       list-style-type: none;
       text-transform: uppercase;
       line-height: 40px;
-      color: #323E4E;
+      color: #fff;
       font-weight: 700; }
       .main_skills .skills li .myProgress {
         width: 100%;
@@ -30,8 +31,10 @@ h3 {
     .main_skills .annex li {
       list-style-type: none;
       text-transform: uppercase;
-      background-color: #365D95;
+      background-color: #ED1C40;
       color: #fff;
-      padding: 15px; }
+      padding: 15px;
+      border-radius: 8px;
+      font-weight: bold; }
 
 /*# sourceMappingURL=skills.css.map */

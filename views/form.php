@@ -1,4 +1,5 @@
 <section id="form" class="form-container">
+	<a href="index.php#top" class="scroll"> <i class="fa fa-arrow-up" id="arrowUp"></i></a>
 	<form action="index.php#form" method="post">
 		<?php require 'validation_server.php'; ?>
 		<h1> Me contacter </h1> <h5> PS : Tous les champs sont obligatoires. Vous ne pourrez valider qu'après avoir rempli correctement tous les champs </h5>

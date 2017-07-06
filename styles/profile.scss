@@ -10,6 +10,8 @@ $text-color: #555;
 $text-size: 14px;
 $family: 'Source Serif Pro', serif;
 
+#profile {opacity: 0;}
+
 .job, .accroche {@include center(center);}
 
 .job {color: $text-color;}

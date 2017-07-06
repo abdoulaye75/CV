@@ -1,7 +1,8 @@
 .form-container {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px; }
+  padding: 20px;
+  opacity: 0; }
   .form-container i {
     font-size: 50px;
     display: none;
@@ -37,7 +38,8 @@
     color: #fff;
     padding: 12px 20px;
     border: 1px solid #4CAF50;
-    border-radius: 4px; }
+    border-radius: 4px;
+    cursor: pointer; }
     .form-container button[type=submit]:hover {
       background-color: #fff;
       color: #4CAF50;
@@ -48,7 +50,8 @@
     color: #fff;
     padding: 12px 20px;
     border: 1px solid #FF0000;
-    border-radius: 4px; }
+    border-radius: 4px;
+    cursor: cursor; }
     .form-container button[type=reset]:hover {
       background-color: #fff;
       color: #FF0000;

@@ -2,6 +2,7 @@
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	opacity: 0;
 
 	#site1 {background:{image : url("../img/place_des_cliches.png"); repeat : no-repeat; size : cover;}}
 

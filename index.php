@@ -29,6 +29,7 @@
 	<?php require 'views/form.php'; ?>
 
 	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/index.js"></script>
 	<script src="js/nav.js"></script>
 	<script src="js/skills.js"></script>
 	<script src="js/form.js"></script>

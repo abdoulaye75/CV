@@ -29,6 +29,6 @@
 		<span class="success" id="successMessage"> Message rempli </span>
 
 		<button type="submit" id="submitForm" name="submit"> Envoyer </button>
-		<button type="reset" id="resetForm" disabled> Tout effacer </button>
+		<button type="reset" id="resetForm"> Tout effacer </button>
 	</form>
 </section>

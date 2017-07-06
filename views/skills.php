@@ -29,5 +29,6 @@
 		<li> uml </li>
 		<li> wordpress </li>
 		<li> méthode agile </li>
+		<li> tdd </li>
 	</ul>
 </section>

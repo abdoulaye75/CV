@@ -15,7 +15,7 @@
 			<ul class="framework">
 				<li> bootstrap <div class="myProgress"> <div class="level level85" id="bootstrap"> 85% </div> </div> </li>
 				<li> sass <div class="myProgress"> <div class="level level85" id="sass"> 85% </div> </div> </li>
-				<li> jquery <div class="myProgress"> <div class="level level80" id="sass"> 80% </div> </div> </li>
+				<li> jquery <div class="myProgress"> <div class="level level80" id="jquery"> 80% </div> </div> </li>
 				<li> angularjs <div class="myProgress"> <div class="level level70" id="angularjs"> 70% </div> </div> </li>
 				<li> sql <div class="myProgress"> <div class="level level60" id="sql"> 60% </div> </div> </li>
 			</ul>

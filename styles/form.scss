@@ -64,7 +64,7 @@
     }
 
     button[type=reset] {
-    	@include button(#FF0000, #fff, 12px 20px, 1px solid #FF0000, 4px, cursor);
+    	@include button(#FF0000, #fff, 12px 20px, 1px solid #FF0000, 4px, pointer);
 
 	    &:hover {@include hover(#fff, #FF0000, 1px solid #FF0000, 0.3s);}
     }

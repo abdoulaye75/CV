@@ -18,13 +18,80 @@ h3 {
       font-weight: 700; }
       .main_skills .skills li .myProgress {
         width: 100%;
-        background-color: #2AB27B;
-        line-height: 2em;
-        height: 30px; }
+        background-color: #ddd;
+        line-height: 2em; }
         .main_skills .skills li .myProgress .level {
           text-align: center;
           color: #fff;
-          font-weight: bold; }
+          font-weight: bold;
+          height: 30px;
+          background-color: #2AB27B; }
+@keyframes level90 {
+  0% {
+    width: 0%; }
+  50% {
+    width: 45%; }
+  100% {
+    width: 90%; } }
+@keyframes level85 {
+  0% {
+    width: 0%; }
+  50% {
+    width: 42%; }
+  100% {
+    width: 85%; } }
+@keyframes level80 {
+  0% {
+    width: 0%; }
+  50% {
+    width: 40%; }
+  100% {
+    width: 80%; } }
+@keyframes level75 {
+  0% {
+    width: 0%; }
+  50% {
+    width: 37%; }
+  100% {
+    width: 75%; } }
+@keyframes level70 {
+  0% {
+    width: 0%; }
+  50% {
+    width: 35%; }
+  100% {
+    width: 70%; } }
+@keyframes level60 {
+  0% {
+    width: 0%; }
+  50% {
+    width: 30%; }
+  100% {
+    width: 60%; } }
+        .main_skills .skills li .myProgress .level90 {
+          width: 90%;
+          animation-name: level90;
+          animation-duration: 2s; }
+        .main_skills .skills li .myProgress .level85 {
+          width: 85%;
+          animation-name: level85;
+          animation-duration: 2s; }
+        .main_skills .skills li .myProgress .level80 {
+          width: 80%;
+          animation-name: level80;
+          animation-duration: 2s; }
+        .main_skills .skills li .myProgress .level75 {
+          width: 75%;
+          animation-name: level75;
+          animation-duration: 2s; }
+        .main_skills .skills li .myProgress .level70 {
+          width: 70%;
+          animation-name: level70;
+          animation-duration: 2s; }
+        .main_skills .skills li .myProgress .level60 {
+          width: 60%;
+          animation-name: level60;
+          animation-duration: 2s; }
   .main_skills .annex {
     display: flex;
     justify-content: space-around;

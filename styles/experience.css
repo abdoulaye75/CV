@@ -20,8 +20,7 @@
       text-align: center;
       background-color: #39D1B4;
       color: #fff;
-      font-size: 18px;
-      font-family: "Source Serif Pro", serif; }
+      font-size: 18px; }
     .timeline-container .timeline-block .timeline-content {
       position: relative;
       background: #fff;
@@ -36,8 +35,7 @@
         color: #303e49; }
       .timeline-container .timeline-block .timeline-content p, .timeline-container .timeline-block .timeline-content li {
         margin: 1em 0;
-        line-height: 1.6;
-        font-family: "Source Serif Pro", serif; }
+        line-height: 1.6; }
       .timeline-container .timeline-block .timeline-content li {
         list-style-type: none; }
         .timeline-container .timeline-block .timeline-content li::before {

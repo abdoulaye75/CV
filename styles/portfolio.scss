@@ -1,8 +1,22 @@
+@mixin description($width, $display:none, $position:absolute, $height:300px, $bg-color:rgba(0, 0, 0, 0.8)) {
+	width: $width;
+	display: $display;
+	position: $position;
+	height: $height;
+	background-color: $bg-color;
+}
+
+@mixin details ($color: #fff, $align: center) {
+	color: $color;
+	text-align: $align;
+}
+
 .realisations {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	opacity: 0;
+	background-color: #0F1721;
 
 	#site1 {background:{image : url("../img/place_des_cliches.png"); repeat : no-repeat; size : cover;}}
 
@@ -11,7 +25,19 @@
 	.realisation {
 		width: 45%;
 		height: 300px;
+	}
 
-		.description {display: none;}
+	#description1 {
+		@include description(45%, none, absolute, 300px, rgba(0, 0, 0, 0.8));
+		left: 30px;
+
+		h4, p {@include details(#fff, center);}
+	}
+
+	#description2 {
+		@include description(45%, none, absolute, 300px, rgba(0, 0, 0, 0.8));
+		right: 30px;
+
+		h4, p {@include details(#fff, center);}
 	}
 }

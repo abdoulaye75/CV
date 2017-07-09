@@ -1,6 +1,6 @@
 .form-container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #fff;
   padding: 20px;
   opacity: 0; }
   .form-container i {
@@ -17,14 +17,14 @@
   .form-container input[type=text], .form-container input[type=email], .form-container textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 2px solid #818282;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-    font-family: 'Source Serif Pro', serif; }
+    /*font-family: 'Source Serif Pro', serif;*/ }
     .form-container input[type=text]:focus, .form-container input[type=email]:focus, .form-container textarea:focus {
-      border: 3px solid #555; }
+      border: 6px solid #555; }
   .form-container textarea {
     height: 200px; }
   .form-container .error, .form-container .success {

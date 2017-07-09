@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  opacity: 0; }
+  opacity: 0;
+  background-color: #0F1721; }
   .realisations #site1 {
     background-image: url("../img/place_des_cliches.png");
     background-repeat: no-repeat;
@@ -14,7 +15,25 @@
   .realisations .realisation {
     width: 45%;
     height: 300px; }
-    .realisations .realisation .description {
-      display: none; }
+  .realisations #description1 {
+    width: 45%;
+    display: none;
+    position: absolute;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 30px; }
+    .realisations #description1 h4, .realisations #description1 p {
+      color: #fff;
+      text-align: center; }
+  .realisations #description2 {
+    width: 45%;
+    display: none;
+    position: absolute;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    right: 30px; }
+    .realisations #description2 h4, .realisations #description2 p {
+      color: #fff;
+      text-align: center; }
 
 /*# sourceMappingURL=portfolio.css.map */

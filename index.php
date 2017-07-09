@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/form.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
 	<link rel="icon" type="image/jpg" href="img/abdoulaye.jpg">
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
@@ -32,6 +32,7 @@
 	<script src="js/index.js"></script>
 	<script src="js/nav.js"></script>
 	<script src="js/skills.js"></script>
+	<script src="js/portfolio.js"></script>
 	<script src="js/form.js"></script>
 </body>
 </html>

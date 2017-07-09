@@ -1,6 +1,4 @@
-$family: 'Source Serif Pro', serif;
-
-@mixin date($radius:50%, $border:1px solid #39D1B4, $width:90px, $height:90px, $line:30px, $text:center, $bgcolor: #39D1B4, $color: #fff, $textsize: 18px, $font:$family) {
+@mixin date($radius:50%, $border:1px solid #39D1B4, $width:90px, $height:90px, $line:30px, $text:center, $bgcolor: #39D1B4, $color: #fff, $textsize: 18px) {
 	border-radius: $radius;
 	border: $border;
 	width: $width;
@@ -10,7 +8,6 @@ $family: 'Source Serif Pro', serif;
 	background-color: $bgcolor;
 	color: $color;
 	font-size: $textsize;
-	font-family: $font;
 }
 
 .timeline-container {
@@ -50,7 +47,6 @@ $family: 'Source Serif Pro', serif;
 			  p, li {
 			    margin: 1em 0;
 			    line-height: 1.6;
-				font-family: $family;
 			}
 
 			li {

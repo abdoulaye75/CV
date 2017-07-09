@@ -1,4 +1,4 @@
-<section id="degree" class="timeline-container" style="background-color: lightcoral;">
+<section id="degree" class="timeline-container" style="background-color: #0F1721;">
 	<div class="timeline-block">
 		<div class="date"> 2017 </div>
 		<div class="timeline-content">

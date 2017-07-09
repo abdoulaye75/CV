@@ -2,29 +2,31 @@
 	<a href="index.php#top" class="scroll"> <i class="fa fa-arrow-up" id="arrowUp"></i></a>
 	<form action="index.php#form" method="post">
 		<?php require 'validation_server.php'; ?>
+
 		<h1> Me contacter </h1> <h5> PS : Tous les champs sont obligatoires. Vous ne pourrez valider qu'après avoir rempli correctement tous les champs </h5>
+		
 		<label for="lastname"> Nom : </label>
-		<input type="text" name="lastname" id="lastname" required>
+		<input type="text" name="lastname" id="lastname" required value="<?php if (isset($_POST['lastname'])) { echo $_POST['lastname']; } ?>">
 		<span class="error" id="errorLastname"> Au moins 2 lettres </span>
 		<span class="success" id="successLastname"> Nom valide </span>
 
 		<label for="firstname"> Prénom : </label>
-		<input type="text" name="firstname" id="firstname" required>
+		<input type="text" name="firstname" id="firstname" required value="<?php if (isset($_POST['firstname'])) { echo $_POST['firstname']; } ?>">
 		<span class="error" id="errorFirstname"> Au moins 2 lettres </span>
 		<span class="success" id="successFirstname"> Prénom valide </span>
 
 		<label for="mail"> Adresse mail : </label>
-		<input type="email" name="mail" id="mail" required>
+		<input type="email" name="mail" id="mail" required value="<?php if (isset($_POST['mail'])) { echo $_POST['mail']; } ?>">
 		<span class="error" id="errorMail"> L'adresse mail doit contenir un @ et un . </span>
 		<span class="success" id="successMail"> Adresse mail valide </span>
 
 		<label for="subject"> Sujet : </label>
-		<input type="text" name="subject" id="subject" required>
+		<input type="text" name="subject" id="subject" required value="<?php if (isset($_POST['subject'])) { echo $_POST['subject']; } ?>">
 		<span class="error" id="errorSubject"> Sujet manquant </span>
 		<span class="success" id="successSubject"> Sujet rempli </span>
 
 		<label for="message"> Message : </label>
-		<textarea name="message" id="message" required></textarea>
+		<textarea name="message" id="message" required> <?php if (isset($_POST['message'])) { echo $_POST['message']; } ?> </textarea>
 		<span class="error" id="errorMessage"> Message vide </span>
 		<span class="success" id="successMessage"> Message rempli </span>
 

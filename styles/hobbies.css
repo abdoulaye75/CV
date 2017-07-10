@@ -1,5 +1,6 @@
 .hobbies {
-  margin-top: -20px; }
+  margin-top: -20px;
+  opacity: 0; }
   .hobbies h2 {
     text-transform: uppercase;
     color: #323E4E;

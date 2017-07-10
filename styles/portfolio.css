@@ -3,7 +3,8 @@
   justify-content: space-around;
   flex-wrap: wrap;
   opacity: 0;
-  background-color: #0F1721; }
+  background-color: #0F1721;
+  padding: 15px; }
   .realisations #site1 {
     background-image: url("../img/place_des_cliches.png");
     background-repeat: no-repeat;

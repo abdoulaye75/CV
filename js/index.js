@@ -3,6 +3,7 @@ $(document).ready(function() {
 	let cv = $("#cv");
 	let timeline = $("#timeline")
 	let degree = $("#degree");
+	let hobbies = $(".hobbies");
 	let portfolio = $("#portfolio");
 	let form = $("#form");
 	let html = $("#html");
@@ -52,6 +53,7 @@ $(document).ready(function() {
 	onScrollevent(cv, 200);
 	onScrollevent(timeline, 200);
 	onScrollevent(degree, 200);
+	onScrollevent(hobbies, 200);
 	onScrollevent(portfolio, 200);
 	onScrollevent(form, 200);
 });

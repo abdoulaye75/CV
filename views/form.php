@@ -3,7 +3,8 @@
 	<form action="index.php#form" method="post">
 		<?php require 'validation_server.php'; ?>
 
-		<h1> Me contacter </h1> <h5> PS : Tous les champs sont obligatoires. Vous ne pourrez valider qu'après avoir rempli correctement tous les champs </h5>
+		<h1> Me contacter </h1>
+		<h5> PS : Tous les champs sont obligatoires. Vous ne pourrez valider qu'après avoir rempli correctement tous les champs </h5>
 		
 		<label for="lastname"> Nom : </label>
 		<input type="text" name="lastname" id="lastname" required value="<?php if (isset($_POST['lastname'])) { echo $_POST['lastname']; } ?>">

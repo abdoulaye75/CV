@@ -14,9 +14,9 @@
     .timeline-container .timeline-block .date {
       border-radius: 50%;
       border: 1px solid #39D1B4;
-      width: 90px;
-      height: 90px;
-      line-height: 30px;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
       text-align: center;
       background-color: #39D1B4;
       color: #fff;
@@ -35,7 +35,8 @@
         color: #303e49; }
       .timeline-container .timeline-block .timeline-content p, .timeline-container .timeline-block .timeline-content li {
         margin: 1em 0;
-        line-height: 1.6; }
+        line-height: 1.6;
+        font-size: 18px; }
       .timeline-container .timeline-block .timeline-content li {
         list-style-type: none; }
         .timeline-container .timeline-block .timeline-content li::before {

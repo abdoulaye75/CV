@@ -8,7 +8,7 @@
 	text-transform: $letter;
 }
 
-h3 {color: #fff;}
+h2 {color: #fff;}
 
 .main_skills {
 	background-color: #0F1721;
@@ -103,13 +103,26 @@ h3 {color: #fff;}
 	}
 
 	.annex {
+		display: flex;
+		@include flex (flex, space-around);
+		flex-wrap: wrap;
+
 		li {
 			@include list-style(none, uppercase);
-			background-color: #ED1C40;
 			color: #fff;
 			padding: 15px;
 			border-radius: 8px;
 			font-weight: bold;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+
+			img {
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				margin-bottom: 50px;
+			}
 		}
 
 		@include flex(flex, space-around);

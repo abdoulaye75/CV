@@ -1,6 +1,6 @@
 <section id="timeline" class="timeline-container">
 	<div class="timeline-block">
-		<p class="date"> Juin - Juillet 2017 </p>
+		<p class="date"> Juin 2017 - Juillet 2017 </p>
 		<div class="timeline-content">
 			<h2> Développeur web stagiaire chez Be Relax </h2>
 			<ul>

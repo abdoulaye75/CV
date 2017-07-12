@@ -1,4 +1,4 @@
-h3 {
+h2 {
   color: #fff; }
 
 .main_skills {
@@ -82,15 +82,26 @@ h3 {
           animation-duration: 2s; }
   .main_skills .annex {
     display: flex;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
     justify-content: space-around;
     flex-wrap: wrap; }
     .main_skills .annex li {
       list-style-type: none;
       text-transform: uppercase;
-      background-color: #ED1C40;
       color: #fff;
       padding: 15px;
       border-radius: 8px;
-      font-weight: bold; }
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+      .main_skills .annex li img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 50px; }
 
 /*# sourceMappingURL=skills.css.map */

@@ -7,13 +7,19 @@
 }
 
 $text-color: #555;
-$text-size: 14px;
+$text-size: 18px;
 
-#profile {opacity: 0;}
+#profile {
+	opacity: 0;
+	padding-bottom: 30px;
+}
 
 .job, .accroche {@include center(center);}
 
-.job {color: $text-color;}
+.job {
+	color: $text-color;
+	font-size: 2.5em;
+}
 
 .accroche {
 	color: $text-color;
@@ -24,7 +30,7 @@ $text-size: 14px;
 	box-shadow: 0 4px 20px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.2);
 	width: 66%;
 	margin: auto;
-	height: 350px;
+	height: 400px;
 	@include border-radius(8px);
 
 	.images {
@@ -34,17 +40,17 @@ $text-size: 14px;
 
 		.file {
 			text-decoration: none;
-			color: #fff;
+			color: #0D4D9A;
 			display: table;
-			border: 1px solid lightcoral;
-			background-color: lightcoral;
-			padding: 10px;
+
+			&:hover {text-decoration: underline;}
 		}
 
 		img {
 			width: 200px;
 			height: 200px;
 			@include border-radius(50%);
+			object-fit: cover;
 		}
 
 		.pdf {
@@ -59,14 +65,20 @@ $text-size: 14px;
 		justify-content: space-around;
 		flex-wrap: wrap;
 
-		li {
-			list-style-type: none;
-			color: $text-color;
-			font-size: $text-size;
+		.coordonnees {
+			line-height: 2em;
 
-			a {
-				text-decoration: none;
-				color: #0D4D9A;
+			li {
+				list-style-type: none;
+				color: $text-color;
+				font-size: $text-size;
+
+				a {
+					text-decoration: none;
+					color: #0D4D9A;
+
+					&:hover {text-decoration: underline;}
+				}
 			}
 		}
 	}

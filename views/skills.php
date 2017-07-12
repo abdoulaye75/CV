@@ -1,5 +1,5 @@
 <section id="cv" class="main_skills">
-	<h3> Compétences techniques : </h3>
+	<h2> Compétences techniques : </h2>
 	<div class="skills">
 		<div class="languages">
 			<ul class="technical">
@@ -22,13 +22,13 @@
 		</div>
 	</div>
 
-	<h3> Compétences annexes : </h3>
+	<h2> Compétences annexes : </h2>
 	<ul class="annex">
-		<li> ligne de commande linux </li>
-		<li> ui / ux </li>
-		<li> uml </li>
-		<li> wordpress </li>
-		<li> méthode agile </li>
-		<li> tdd </li>
+		<li> <img src="img/linux.jpg" alt="logo de linux"> ligne de commande </li>
+		<li> <img src="img/ux.jpg" alt="ui/ux"> ui / ux </li>
+		<li> <img src="img/uml.png" alt="diagramme uml"> uml </li>
+		<li> <img src="img/wordpress.jpg" alt="wordpress"> wordpress </li>
+		<li> <img src="img/agile.jpg" alt="méthode agile"> méthode agile </li>
+		<li> <img src="img/tdd.jpg" alt="tdd"> tdd </li>
 	</ul>
 </section>

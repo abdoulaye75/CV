@@ -1,4 +1,4 @@
-@mixin date($radius:50%, $border:1px solid #39D1B4, $width:90px, $height:90px, $line:30px, $text:center, $bgcolor: #39D1B4, $color: #fff, $textsize: 18px) {
+@mixin date($radius:50%, $border:1px solid #39D1B4, $width:200px, $height:200px, $line:200px, $text:center, $bgcolor: #39D1B4, $color: #fff, $textsize: 18px) {
 	border-radius: $radius;
 	border: $border;
 	width: $width;
@@ -47,6 +47,7 @@
 			  p, li {
 			    margin: 1em 0;
 			    line-height: 1.6;
+			    font-size: 18px;
 			}
 
 			li {

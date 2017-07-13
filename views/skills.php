@@ -24,7 +24,7 @@
 
 	<h2> Compétences annexes : </h2>
 	<ul class="annex">
-		<li> <img src="img/linux.jpg" alt="logo de linux"> ligne de commande </li>
+		<li> <img src="img/linux.jpg" alt="logo de linux"> ligne de commande <br> linux </li>
 		<li> <img src="img/ux.jpg" alt="ui/ux"> ui / ux </li>
 		<li> <img src="img/uml.png" alt="diagramme uml"> uml </li>
 		<li> <img src="img/wordpress.jpg" alt="wordpress"> wordpress </li>

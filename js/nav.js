@@ -1,14 +1,12 @@
-let navElt = document.getElementById("myNavbar");
-let iconElt = document.getElementById("hamburger_menu");
-
-iconElt.addEventListener("click", function() {
-	navElt.classList.toggle("responsive");
-});
-
 $(document).ready(function() {
 	let myNavbar = $("#myNavbar");
+	let iconElt = $("#hamburger_menu");
 	let myNavbarOffset = myNavbar.offset().top;
 	let linkElt = $(".scroll");
+
+	iconElt.click(function() {
+		myNavbar.toggleClass("responsive");
+	});
 
 	// la barre de navigation statique au scroll
 	$(document).on("scroll", function() {
@@ -31,18 +29,19 @@ $(document).ready(function() {
 	let arrowUp = $("#arrowUp");
 	
 	ScrollToTop = function() {
-	var scroll = $(window).scrollTop(); // c'est la hauteur de la barre de défilement du navigateur
-	if (scroll > 400) { // si la hauteur de la barre de défilement est supérieur à 400 pixels, le bouton apparaît. Sinon le bouton disparaît
-		arrowUp.fadeIn();
-	}
-	else {
-		arrowUp.fadeOut();
-	}
+		let scroll = $(window).scrollTop(); // c'est la hauteur de la barre de défilement du navigateur
+		if (scroll > 400) { /* si la hauteur de la barre de défilement est supérieur à 400 pixels, le bouton apparaît.
+								Sinon le bouton disparaît */
+			arrowUp.fadeIn();
+		}
+		else {
+			arrowUp.fadeOut();
+		}
 
-	arrowUp.click(function() {
-		$("html, body").animate({scrollTop : 0}, 500);
-		return false;
-	});
+		arrowUp.click(function() {
+			$("html, body").animate({scrollTop : 0}, 500);
+			return false;
+		});
 	}
 	
 
@@ -54,7 +53,7 @@ $(document).ready(function() {
 
 	$(window).scroll(function() {
 		ScrollToTop();
-		StopAnimation()
+		StopAnimation();
 	});
 });
 

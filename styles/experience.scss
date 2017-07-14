@@ -51,16 +51,6 @@
 			}
 
 			li {
-				list-style-type: none;
-
-				&::before {
-					content: '';
-				    height: 0;
-				    width: 0;
-				    border: 5px solid lightcoral;
-				    border-right: 10px solid lightcoral;
-				    margin-right: 15px;
-				}
 
 				a {
 					color: #0D4D9A;

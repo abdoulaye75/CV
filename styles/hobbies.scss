@@ -6,10 +6,17 @@
 		text-transform: uppercase;
 		color: #323E4E;
 		text-align: center;
+		font-size: 3em;
 	}
 
 	p {
 		color: #555;
-		font-size: 14px;
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.img-fitness {
+		display: flex;
+		justify-content: center;
 	}
 }

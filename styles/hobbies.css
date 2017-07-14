@@ -4,9 +4,14 @@
   .hobbies h2 {
     text-transform: uppercase;
     color: #323E4E;
-    text-align: center; }
+    text-align: center;
+    font-size: 3em; }
   .hobbies p {
     color: #555;
-    font-size: 14px; }
+    font-size: 18px;
+    text-align: center; }
+  .hobbies .img-fitness {
+    display: flex;
+    justify-content: center; }
 
 /*# sourceMappingURL=hobbies.css.map */

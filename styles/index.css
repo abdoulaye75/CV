@@ -4,5 +4,11 @@ body {
 
 * {
   font-family: 'Dosis', sans-serif; }
+  *::selection {
+    background-color: #272822;
+    color: #fff; }
+  *::-moz-selection {
+    background-color: #272822;
+    color: #fff; }
 
 /*# sourceMappingURL=index.css.map */

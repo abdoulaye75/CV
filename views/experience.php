@@ -23,7 +23,6 @@
 		<div class="timeline-content">
 			<h2> Projets web dans le cadre de la formation </h2>
 			<ul>
-				<li> création d'un site vitrine pour une association (en cours) </li>
 				<li> mini-CMS en PHP et MySQL </li>
 				<li> jeu du juste prix en JavaScript </li>
 				<li> minuteur en JavaScript </li>

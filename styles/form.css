@@ -4,7 +4,7 @@
   padding: 20px;
   opacity: 0; }
   .form-container i {
-    font-size: 50px;
+    font-size: 40px;
     display: none;
     position: fixed;
     bottom: 20px;
@@ -13,7 +13,8 @@
     color: #fff;
     background-color: #000;
     cursor: pointer;
-    padding: 5px; }
+    padding: 5px;
+    border-radius: 50%; }
   .form-container input[type=text], .form-container input[type=email], .form-container textarea {
     width: 100%;
     padding: 12px;

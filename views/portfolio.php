@@ -11,7 +11,7 @@
 	</div>
 
 	<div id="site2" class="realisation">
-		<a href="#">
+		<a href="portfolio/mini-CMS/views/index.php">
 			<img src="img/cms.png" alt="Mini-CMS">
 		</a>
 
@@ -99,7 +99,7 @@
 	</div>
 
 	<div id="site10" class="realisation">
-		<a href="#">
+		<a href="portfolio/php-exo/index.php">
 			<img src="img/e-commerce.png" alt="mini-boutique en php/mysql">
 		</a>
 

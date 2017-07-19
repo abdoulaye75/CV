@@ -1,6 +1,6 @@
 <section id="portfolio" class="realisations">
 	<div id="site1" class="realisation">
-		<a href="#">
+		<a href="portfolio/place-des-cliches/index.php">
 			<img src="img/place_des_cliches.png" alt="place des cliches">
 		</a>
 

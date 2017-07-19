@@ -17,10 +17,18 @@ $(document).ready(function() {
 	let angularjs = $("#angularjs");
 	let sql = $("#sql");
 
+	let profileLink = $("#profileLink");
+	let cvLink = $("#cvLink");
+	let portfolioLink = $("#portfolioLink");
+	let formLink = $("#formLink");
+	let contactForm = $("form");
+
 
 	/* l'animation au scroll des éléments html. La variable on_scroll pour la visibilité,
-	increaseSkill pour les barres de progression animées. On appelle ensuite ces fonctions dans un événement au scroll
+	increaseSkill pour les barres de progression animées, activeCurrentLink pour les liens actuels parcourus.
+	On appelle ensuite ces fonctions dans un événement au scroll
 	et on les appelle simplement pour qu'elles s'exécutent */
+	
 	function onScrollevent(element, more_offset = 0) {
 		let on_scroll = function() {
 			if ($(window).scrollTop() > element.offset().top - more_offset) {
@@ -42,6 +50,22 @@ $(document).ready(function() {
 				sql.addClass("level60");
 			}
 		}
+
+		function activeCurrentLink(startSection, endSection, currentLink) {
+			$(window).scroll(function() {
+				if ($(window).scrollTop() >= startSection.offset().top - 350 && $(window).scrollTop() < endSection.offset().top - 350) {
+					if ($(".active")) {
+						$(".active").removeClass("active");
+					}
+					currentLink.addClass("active");
+				}
+			});
+		}
+
+		activeCurrentLink(profile, cv, profileLink);
+		activeCurrentLink(cv, portfolio, cvLink);
+		activeCurrentLink(portfolio, form, portfolioLink);
+		activeCurrentLink(form, contactForm, formLink);
 
 		$(window).scroll(on_scroll);
 		$(window).scroll(increaseSkill);

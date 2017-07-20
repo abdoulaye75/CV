@@ -22,7 +22,7 @@
 		</div>
 	</div>
 
-	<h2> Compétences annexes : </h2>
+	<h2> Compétences supplémentaires : </h2>
 	<ul class="annex">
 		<li> <img src="img/linux.jpg" alt="logo de linux"> ligne de commande <br> linux </li>
 		<li> <img src="img/ux.jpg" alt="ui/ux"> ui / ux </li>

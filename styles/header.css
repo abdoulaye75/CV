@@ -35,19 +35,21 @@ header {
           text-transform: uppercase; }
 
 @media screen and (max-width: 770px) {
-  .navbar ul {
-    display: flex;
-    flex-direction: column; } }
-@media screen and (max-width: 770px) {
   .navbar {
-    display: none; }
+    display: none;
+    height: 300px;
+    background-color: #000; }
 
   .navlink, .me {
     display: none; }
 
+  .navbar ul {
+    display: flex;
+    flex-direction: column; }
+
   /* correspond au menu déroulant sur petits supports */
   .responsive {
-    /*.navbar {display: block;}*/ }
+    background-color: #000; }
     .responsive .navlink, .responsive .me {
       float: none;
       display: block;

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Formulaire de mise en forme d'une page web </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+
+	<div class="flex-container">
+		<div class="form" id="controls">
+			<form>
+				<div class="choice">
+					<label for="background"> Couleur de fond : </label>
+					<select id="background">
+						<option value="#fff"> Blanc </option>
+						<option value="#000"> Noir </option>
+						<option value="#6495ED"> Bleu </option>
+						<option value="#4CAF50"> Vert </option>
+					</select>
+				</div>
+
+				<div class="choice">
+					<label for="color"> Couleur du texte : </label>
+					<select id="color">
+						<option value="#fff"> Blanc </option>
+						<option value="#000"> Noir </option>
+						<option value="#6495ED"> Bleu </option>
+						<option value="#4CAF50"> Vert </option>
+					</select>
+				</div>
+
+				<div class="choice">
+					<label for="family"> Police de caractère du texte : </label>
+					<select id="family">
+						<option value="arial"> Arial </option>
+						<option value="tnr"> Times New Roman </option>
+						<option value="ssp"> Source Sans pro </option>
+						<option value="raleway"> Raleway </option>
+					</select>
+				</div>
+
+				<div class="choice">
+					<label for="size"> Taille du texte : </label>
+					<select id="size">
+						<option value="12"> 12px </option>
+						<option value="16"> 16px </option>
+						<option value="20"> 20px </option>
+						<option value="24"> 24px </option>
+						<option value="30"> 30px </option>
+					</select>
+				</div>
+
+				<div class="choice">
+					<label for="style"> Style du texte : </label>
+					<select id="style">
+						<option value="normal"> Normal </option>
+						<option value="bold"> Gras </option>
+						<option value="italic"> Italique </option>
+						<option value="underline"> Souligné </option>
+						<option value="line-through"> Barré </option>
+					</select>
+				</div>
+
+				<div class="choice">
+					<label for="background-image"> Image de fond : </label>
+					<select id="background-image">
+						<option value="yes"> Oui </option>
+						<option value="no"> Non </option>
+					</select>
+				</div>
+
+				<div class="choice">
+					<label for="center"> Texte centré </label>
+					<select id="center">
+						<option value="yes"> Oui </option>
+						<option value="no"> Non </option>
+					</select>
+				</div>
+
+				<button type="reset"> Réinitialiser </button>
+			</form>
+		</div>
+
+
+
+		<div class="content" id="contenu">
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus enim eros, quis viverra nulla semper ac. Ut at volutpat eros, et consequat erat. Pellentesque tristique facilisis nisi, ut porta metus auctor id. Sed vestibulum, sapien vitae imperdiet maximus, turpis felis rutrum elit, eget imperdiet sapien augue a felis. Integer condimentum urna et metus egestas tristique. Curabitur sagittis vitae tortor eget varius. Vestibulum et sem interdum, dapibus nisi sit amet, auctor odio. Morbi id lobortis felis. Nullam pretium imperdiet nibh non imperdiet. Suspendisse congue tortor blandit dui vehicula maximus. Nullam auctor nisi tincidunt enim semper suscipit. </p>
+
+			<p> Donec posuere nisi at urna imperdiet pellentesque. Donec eu lobortis massa, quis viverra dui. Suspendisse ultricies sapien dui, vel pulvinar nulla feugiat quis. Duis volutpat est magna, nec vestibulum ex sagittis in. Fusce blandit, nisl nec ultrices luctus, purus nibh tincidunt leo, quis aliquam magna sapien ac mauris. Sed non urna nisi. Nam at orci magna. Quisque efficitur fermentum leo sed convallis. Nulla porta quam metus, sed sagittis sapien hendrerit in. </p>
+
+			<p> Nulla ac justo porta, tempor arcu a, mollis metus. Curabitur id fermentum neque. Vivamus rutrum vel tortor non ultricies. Fusce ultrices lectus dictum molestie auctor. Quisque vitae lectus vitae urna tempus commodo nec vitae ante. In vitae interdum felis. Pellentesque tristique, neque non lobortis varius, turpis odio eleifend massa, ut auctor diam ex sit amet tortor. Aliquam sagittis odio vel orci lobortis cursus nec vitae erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In feugiat tortor fringilla nunc congue bibendum. Maecenas quam tellus, porttitor quis facilisis quis, mattis dictum quam. Vestibulum non auctor quam. </p>
+
+			<p> Sed ullamcorper lectus a pulvinar rhoncus. Quisque dapibus ut purus sed consequat. In aliquam, lorem quis pulvinar mattis, ipsum orci varius justo, nec ullamcorper ligula libero ut diam. Nullam in erat urna. In ultricies, orci sit amet feugiat convallis, augue purus bibendum dui, at varius sem nunc vitae elit. Nunc diam eros, rhoncus a feugiat vel, faucibus varius arcu. Nullam id nibh nec turpis ultricies consequat. Morbi quis lacus a dolor volutpat scelerisque quis vitae quam. Donec in ullamcorper tortor, eget blandit ante. Donec sit amet dignissim nisl, ut sollicitudin dolor. Mauris nec dictum felis, et fringilla orci. Morbi libero orci, blandit vitae semper in, commodo ac erat. Proin ac mollis lacus. Duis viverra condimentum urna, in facilisis ligula mattis lobortis. </p>
+		</div>
+	</div>
+	
+	<script src="jquery-2.2.4.js"></script>
+	<script src="form.js"></script>
+</body>
+</html>

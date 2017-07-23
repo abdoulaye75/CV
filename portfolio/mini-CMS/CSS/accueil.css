@@ -1,0 +1,43 @@
+body {
+  background-color: AliceBlue; }
+
+.mesonglet {
+  border-radius: 2%;
+  border: solid 1px;
+  margin: auto;
+  margin-top: 15%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  width: 50%;
+  text-align: center;
+  background-color: white; }
+
+h2 {
+  color: #fff;
+  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+  font: 80px 'ChunkFiveRegular'; }
+
+input {
+  float: left;
+  width: 30%; }
+
+button {
+  padding: 15px 30px; }
+
+section {
+  background-image: url("../img/cake.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  margin-bottom: 50px;
+  margin-top: -20px; }
+  section h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px; }
+  section p {
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold; }
+
+/*# sourceMappingURL=accueil.css.map */

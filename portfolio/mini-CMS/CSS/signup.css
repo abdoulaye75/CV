@@ -1,0 +1,27 @@
+button {
+  background-color: #337AB7;
+  color: #555459;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 8px;
+  text-align: center; }
+  button:hover {
+    background-color: #fff;
+    color: #337AB7;
+    border: 1px solid #337AB7; }
+
+.conteneur {
+  height: 320px;
+  width: 75%;
+  margin: auto;
+  border: 1px solid #efefef;
+  border-radius: 8px;
+  margin-top: 100px;
+  padding: 20px; }
+  .conteneur h1 {
+    color: #555459;
+    font-weight: bold; }
+  .conteneur label {
+    color: #555459; }
+
+/*# sourceMappingURL=signup.css.map */

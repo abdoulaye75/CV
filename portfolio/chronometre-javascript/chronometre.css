@@ -1,0 +1,59 @@
+body {
+	background-image: url("chrono.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.conteneur {
+	width: 800px;
+	height: 200px;
+	margin: auto;
+	margin-top: 100px;
+	border: 1px solid #555459;
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+.flex-conteneur {
+	display: flex;
+	justify-content: space-around;
+}
+
+* {
+	font-family: 'Roboto', sans-serif;
+	color: #555459;
+}
+
+h1, h2 {text-align: center;}
+
+button {
+	border-radius: 8px;
+	color: #fff;
+	text-align: center;
+	padding: 15px 30px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.buttonStart {background-color: #337AB7;}
+
+.buttonStart:hover {
+	background-color: #fff;
+	color: #337AB7;
+	border: 1px solid #337AB7;
+}
+
+.buttonReset {background-color: #D43F3A;}
+
+.buttonReset:hover {
+	background-color: #fff;
+	color: #D43F3A;
+	border: 1px solid #D43F3A;
+}
+
+@media screen and (max-width: 820px) {
+	.conteneur {
+		width: 300px;
+		height: 400px;
+	}
+}

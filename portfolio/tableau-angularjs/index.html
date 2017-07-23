@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="myTable">
+<head>
+	<meta charset="utf-8">
+	<title> Tableau que l'utilisateur peut trier </title>
+	<link rel="stylesheet" type="text/css" href="style/bootstrap/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style/tableau.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<script src="js/angular.min.js"></script>
+	<script src="js/tableau.js"></script>
+</head>
+<body>
+
+	<h1 class="text-center"> Trier le tableau comme vous le souhaitez. Cliquer sur l'en-tête de colonne </h1>
+
+	<div class="container">
+		<table ng-controller="tableCtrl" class="table table-bordered table-responsive">
+			<thead>
+				<tr>
+					<th ng-click="sortBy('year')"> Année de mise en circulation </th>
+
+					<th ng-click="sortBy('brand')"> Marque	</th>
+
+					<th ng-click="sortBy('model')"> Modèle </th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr ng-repeat="car in cars | orderBy:propertyName:reverse">
+					<td class="danger"> {{car.year}} </td>
+					<td class="success"> {{car.brand}} </td>
+					<td class="info"> {{car.model}} </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</body>
+</html>

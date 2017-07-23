@@ -1,0 +1,49 @@
+body {
+	background-image: url("bombe.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.rect {
+	width: 80%;
+	height: 500px;
+	margin: auto;
+	border: 3px solid #000;
+	border-radius: 8px;
+	position: relative;
+	background-color: #fff;
+	opacity: 0.9;
+}
+
+.button {
+	border-radius: 50%;
+	background-color: red;
+	color: #fff;
+	display: inline-block;
+	padding: 40px 20px;
+	margin: 15px 20px;
+	font-weight: bold;
+	cursor: pointer;
+	position: absolute; /* pas d'animation au bouton dès le chargement de la page */
+}
+
+@keyframes explosion {
+	0% {background-color: yellow;} /* au départ, le bouton est jaune */
+
+	50% {background-color: orange;} /* ensuite, il devient orange */
+
+	100% {background-color: red; /* enfin, il devient rouge et n'est plus visible */
+		visibility: hidden;
+	}
+}
+
+.resetAnimation {
+	animation: explosion 2s;
+	transition: all .1.5s ease-in-out;
+} /* l'animation répétée */
+
+.points, .minuteur, .record {
+	text-align: center;
+	font-weight: bold;
+	font-size: 24px;
+}

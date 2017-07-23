@@ -1,0 +1,41 @@
+* {
+  font-family: 'Merriweather', serif; }
+
+.header {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 640px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header h1 {
+    color: #fff;
+    font-size: 6em;
+    font-weight: bold; }
+
+.main .list {
+  padding: 20px;
+  background-color: #D4D5D6; }
+  .main .list .description img {
+    width: 300px;
+    height: 300px; }
+  .main .list .description .price {
+    background-color: #39D1B4;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    line-height: 80px; }
+  .main .list .description .title, .main .list .description .author, .main .list .description .year {
+    color: #fff; }
+
+@media screen and (min-width: 540px) and (max-width: 800px) {
+  .header h1 {
+    font-size: 3em; } }
+@media screen and (max-width: 540px) {
+  .header h1 {
+    font-size: 2em; } }
+
+/*# sourceMappingURL=main.css.map */

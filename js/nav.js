@@ -5,6 +5,7 @@ $(document).ready(function() {
 	let linkElt = $(".scroll");
 
 	iconElt.click(function() {
+		myNavbar.toggle();
 		myNavbar.toggleClass("responsive");
 	});
 

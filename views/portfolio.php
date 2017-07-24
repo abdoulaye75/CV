@@ -1,5 +1,5 @@
 <section id="portfolio" class="realisations">
-	<div id="site1" class="realisation">
+	<!-- <div id="site1" class="realisation">
 		<a href="#">
 			<img src="img/place_des_cliches.png" alt="place des cliches">
 		</a>
@@ -8,7 +8,7 @@
 			<h4> Place des Clichés </h4>
 			<p> Projet client </p>
 		</div>
-	</div>
+	</div> -->
 
 	<div id="site2" class="realisation">
 		<a href="portfolio/mini-CMS/views/">

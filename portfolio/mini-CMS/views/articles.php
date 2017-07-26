@@ -14,6 +14,8 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="icon" type="image/jpg" href="../../../img/abdoulaye.jpg">
+  	<link rel="icon" type="image/x-icon" href="../../../img/favicon.ico">
 </head>
 <body>
 

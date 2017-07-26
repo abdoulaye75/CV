@@ -6,14 +6,13 @@ include("database.php");
 
 $randonnees = $bdd->query('SELECT * FROM hiking');
 
-$name = htmlspecialchars($_POST['name']);
-$difficulty = htmlspecialchars($_POST['difficulty']);
-$distance = htmlspecialchars($_POST['distance']);
-$duration = htmlspecialchars($_POST['duration']);
-$height_difference = htmlspecialchars($_POST['height_difference']);
-$available = htmlspecialchars($_POST['available']);
-
-if ((isset($name)) && (isset($difficulty)) && (isset($distance)) && (isset($duration)) && (isset($height_difference)) && (isset($available)) && (isset($_POST['button']))) {
+if (isset($_POST['name'],$_POST['difficulty'], $_POST['distance'], $_POST['duration'], $_POST['height_difference'], $_POST['available'], $_POST['button'])) {
+	$name = htmlspecialchars($_POST['name']);
+	$difficulty = htmlspecialchars($_POST['difficulty']);
+	$distance = htmlspecialchars($_POST['distance']);
+	$duration = htmlspecialchars($_POST['duration']);
+	$height_difference = htmlspecialchars($_POST['height_difference']);
+	$available = htmlspecialchars($_POST['available']);
 	$req = $bdd->prepare("INSERT INTO hiking (name, difficulty, distance, duration, height_difference, available) VALUES (?, ?, ?, ?, ?, ?)");
 		
 	$req->execute(array($name, $difficulty, $distance, $duration, $height_difference, $available));
@@ -29,6 +28,8 @@ if ((isset($name)) && (isset($difficulty)) && (isset($distance)) && (isset($dura
 	<title>Ajouter une randonnée</title>
 	<link rel="stylesheet" href="css/basics.css" media="screen" title="no title" charset="utf-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="icon" type="image/jpg" href="../../img/abdoulaye.jpg">
+	<link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
 </head>
 <body>
 	<a href="read.php" class="btn btn-primary">Liste des données</a>

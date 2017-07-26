@@ -6,7 +6,7 @@ include("database.php");
 
 if (isset($_GET['id'])) { // si l'utilisateur clique sur "Modifier la randonnée"
 	
-	if ((isset($name)) && (isset($difficulty)) && (isset($distance)) && (isset($duration)) && (isset($height_difference)) && (isset($available)) && (isset($_POST['button']))) {
+	if (isset($_POST['name'], $_POST['difficulty'], $_POST['distance'], $_POST['duration'], $_POST['height_difference'], $_POST['available'], $_POST['button'])) {
 	$req = $bdd->prepare("UPDATE hiking SET name= :nvname, difficulty= :nvdifficulty, distance= :nvdistance, duration= :nvduration, height_difference= :nvheight_difference, available= :nvavailable WHERE id= :id");
 
 	$nvname = htmlspecialchars($_POST['name']);
@@ -41,6 +41,8 @@ $fullfield->execute(array('id' => $_GET['id']));
 	<title>Ajouter une randonnée</title>
 	<link rel="stylesheet" href="css/basics.css" media="screen" title="no title" charset="utf-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="icon" type="image/jpg" href="../../img/abdoulaye.jpg">
+	<link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
 </head>
 <body>
 	<a href="read.php" class="btn btn-primary">Liste des données</a>

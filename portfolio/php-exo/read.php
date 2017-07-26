@@ -5,6 +5,8 @@
     <title>Randonnées</title>
     <link rel="stylesheet" href="css/basics.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="icon" type="image/jpg" href="../../img/abdoulaye.jpg">
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
   </head>
   <body>
     <h1>Liste des randonnées</h1> <a href="create.php" class="btn btn-primary"> Ajouter une nouvelle randonnée </a> <br> <br>

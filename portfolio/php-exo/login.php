@@ -5,7 +5,7 @@ include("database.php");
 $req = $bdd->prepare("SELECT login, mdp FROM users WHERE login = :login AND mdp = :mdp");
 
 // si l'utilisateur remplit le formulaire et le valide
-if ((isset($_POST['username'])) && (isset($_POST['password'])) && (isset($_POST['button']))) {
+if (isset($_POST['username'], $_POST['password'], $_POST['button'])) {
     $login = htmlspecialchars($_POST['username']);
     $mdp = htmlspecialchars($_POST['password']);
     $_SESSION['login'] = $login;
@@ -36,6 +36,8 @@ if ((isset($_POST['username'])) && (isset($_POST['password'])) && (isset($_POST[
     <title>Login</title>
     <link rel="stylesheet" href="css/basics.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="icon" type="image/jpg" href="../../img/abdoulaye.jpg">
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
   </head>
   <body>
     <a href="index.php" class="btn btn-primary"> Retour à l'accueil </a>

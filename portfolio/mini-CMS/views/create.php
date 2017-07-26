@@ -12,6 +12,8 @@ include '../database/database.php';
 	<meta charset="utf-8">
 	<title> Ajouter une recette </title>
 	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap/css/bootstrap.min.css">
+	<link rel="icon" type="image/jpg" href="../../../img/abdoulaye.jpg">
+	<link rel="icon" type="image/x-icon" href="../../../img/favicon.ico">
 </head>
 <body>
 
@@ -20,18 +22,17 @@ include '../database/database.php';
 <?php
 		$recette = $bdd->query("SELECT * FROM recettes");
 
-		$name = htmlspecialchars($_POST['name']);
-		$ingredients = htmlspecialchars($_POST['ingredients']);
-		$time = htmlspecialchars($_POST['time']);
-		$submit = $_POST['submit'];
+		if (isset($_POST['name'], $_POST['ingredients'], $_POST['time'], $_POST['submit'])) {
+			$name = htmlspecialchars($_POST['name']);
+			$ingredients = htmlspecialchars($_POST['ingredients']);
+			$time = htmlspecialchars($_POST['time']);
 
-		if (isset($name) && isset($ingredients) && isset($time) && isset($submit)) {
-		$req = $bdd->prepare("INSERT INTO recettes (name, ingredients, preparation_time) VALUES (?, ?, ?)");
+			$req = $bdd->prepare("INSERT INTO recettes (name, ingredients, preparation_time) VALUES (?, ?, ?)");
 
-		$req->execute(array($name, $ingredients, $time));
+			$req->execute(array($name, $ingredients, $time));
 
-		echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert">&times;
-			</button>La recette a été ajoutée avec succès</div>';
+			echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert">&times;
+				</button>La recette a été ajoutée avec succès</div>';
 	}
 
   ?>

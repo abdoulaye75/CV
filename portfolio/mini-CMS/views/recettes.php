@@ -10,6 +10,8 @@ include 'database/database.php';
 	<meta charset="utf-8">
 	<title> Fiches recette </title>
 	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap/css/bootstrap.min.css">
+  <link rel="icon" type="image/jpg" href="../../../img/abdoulaye.jpg">
+  <link rel="icon" type="image/x-icon" href="../../../img/favicon.ico">
 </head>
 <body>
 

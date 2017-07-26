@@ -14,6 +14,8 @@ include '../database/database.php';
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../CSS/signup.css">
+  <link rel="icon" type="image/jpg" href="../../../img/abdoulaye.jpg">
+  <link rel="icon" type="image/x-icon" href="../../../img/favicon.ico">
 </head>
 <body>
 
@@ -42,31 +44,30 @@ include '../database/database.php';
     </nav>
 
 <?php
-      $Username = htmlspecialchars($_POST['Username']);
-       $Password = htmlspecialchars($_POST['Password']);
-       $submit = $_POST['button'];
 
-       if ((isset($Username)) && (isset($Password)) && (isset($submit))){
-            // Si l'utilisateur remplit le formulaire et le valide
-            
-         // $_SESSION['name'] = $Username;
-         // $_SESSION['password'] = $Password;
-         $req->execute(array('name' => $Username,'password' => $Password));
+if (isset($_POST['Username'], $_POST['Password'], $_POST['button'])){
+    // Si l'utilisateur remplit le formulaire et le valide
+  $Username = htmlspecialchars($_POST['Username']);
+  $Password = htmlspecialchars($_POST['Password']);
+    
+ // $_SESSION['name'] = $Username;
+ // $_SESSION['password'] = $Password;
+ $req->execute(array('name' => $Username,'password' => $Password));
 
-         $connecteduser = $req->fetch();
-        //si les identifiants de l'utilisateur ne figurent pas dans la base de données, on empêche la connexion et on le propose de s'inscrire
-        if (!$connecteduser) {
-          echo '<div class="alert alert-danger alert-dismissable"> <button type="button" class="close" data-dismiss="alert">&times;</button>
-           <strong> Utilisateur inconnu ! Vérifiez bien votre identifiant et votre mot de passe !
-            Sinon vous pouvez vous inscrire <a href="signup.php" class="alert-link"> ici </a> </strong> </div>';
-        }
-        else { // sinon, la session peut démarrer et l'utilisateur peut accéder à sa page membre personnelle
-          session_start();
-          $_SESSION['name'] = $connecteduser['name'];
-          $_SESSION['password'] = $connecteduser['password'];
-          header("Location: http://localhost/mini-CMS/views/page_membre.php");
-        }
-      }
+ $connecteduser = $req->fetch();
+//si les identifiants de l'utilisateur ne figurent pas dans la base de données, on empêche la connexion et on le propose de s'inscrire
+  if (!$connecteduser) {
+    echo '<div class="alert alert-danger alert-dismissable"> <button type="button" class="close" data-dismiss="alert">&times;</button>
+     <strong> Utilisateur inconnu ! Vérifiez bien votre identifiant et votre mot de passe !
+      Sinon vous pouvez vous inscrire <a href="signup.php" class="alert-link"> ici </a> </strong> </div>';
+  }
+  else { // sinon, la session peut démarrer et l'utilisateur peut accéder à sa page membre personnelle
+    session_start();
+    $_SESSION['name'] = $connecteduser['name'];
+    $_SESSION['password'] = $connecteduser['password'];
+    header("Location: page_membre.php");
+  }
+}
     ?>
 
     <div class="conteneur">

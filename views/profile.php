@@ -21,9 +21,10 @@
 			<div class="coordonnees">
 				<ul>
 					<li> abdoulayedabo@laposte.net </li>
-					<li> 06.58.14.59.75 </li>
-					<li> <a href="https://github.com/abdoulaye75" target="_blank"> Lien github </a> </li>
-					<li> <a href="https://www.linkedin.com/in/abdoulaye-dabo/" target="_blank"> Lien linkedin </a> </li>
+					<li> 06-58-14-59-75 </li>
+					<li> <a href="https://github.com/abdoulaye75" target="_blank"> Lien Github </a> </li>
+					<li> <a href="https://bitbucket.org/abdoulaye75/" target="_blank"> Lien Bitbucket </a> </li>
+					<li> <a href="https://www.linkedin.com/in/abdoulaye-dabo/" target="_blank"> Lien Linkedin </a> </li>
 				</ul>
 			</div>
 		</div>

@@ -2,18 +2,17 @@
 	include '../database/database.php';
 	session_start();
 
-	$username = htmlspecialchars($_POST['username']);
-	$password = htmlspecialchars($_POST['password']);
-
 	$newuser = $bdd->prepare("INSERT INTO users (name, password) VALUES (:name, :password)");
 
-	if ((isset($username)) && (isset($password)) && (isset($_POST['subscribe']))) {
+	if (isset($_POST['username'], $_POST['password'], $_POST['subscribe'])) {
+		$username = htmlspecialchars($_POST['username']);
+		$password = htmlspecialchars($_POST['password']);
 		$_SESSION['name'] = $username;
 		$_SESSION['password'] = $password;
 
 		$newuser->execute(array('name' => $username, 'password' => $password));
 
-		header("Location: http://localhost/mini-CMS/views/page_membre.php");
+		header("Location: page_membre.php");
 	}
 
 ?>
@@ -25,6 +24,8 @@
 	<title> S'inscrire </title>
 	<link rel="stylesheet" type="text/css" href="../CSS/signup.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap/css/bootstrap.min.css">
+  <link rel="icon" type="image/jpg" href="../../../img/abdoulaye.jpg">
+  <link rel="icon" type="image/x-icon" href="../../../img/favicon.ico">
 </head>
 <body>
 

@@ -11,6 +11,8 @@ include 'database/database.php';
     <title>pommes de terre</title>
     <link rel="stylesheet" type="text/css" href="../CSS/pommesdeterre.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap/css/bootstrap.min.css">
+  <link rel="icon" type="image/jpg" href="../../../img/abdoulaye.jpg">
+  <link rel="icon" type="image/x-icon" href="../../../img/favicon.ico">
   </head>
   <body>
 

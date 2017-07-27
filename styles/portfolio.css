@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  opacity: 0;
+  opacity: 0.3;
   background-color: #0F1721;
   padding: 15px; }
   .realisations .realisation {

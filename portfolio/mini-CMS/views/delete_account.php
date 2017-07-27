@@ -6,6 +6,6 @@ if (isset($_GET['name'])) {
 		$deleteUser->execute(array('name' => $_GET['name']));
     $_SESSION = array();
     session_destroy();
-		header("Location: http://localhost/mini-CMS/views/index.php");
+		header("Location: index.php");
 	}
 }

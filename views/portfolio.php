@@ -108,4 +108,15 @@
 			<p> Mini-boutique en php / mysql </p>
 		</div>
 	</div>
+
+	<div id="site11" class="realisation">
+		<a href="portfolio/slider-js/">
+			<img src="img/slider.png" alt="slider en js">
+		</a>
+
+		<div class="description" id="description11">
+			<h4> Slider en js </h4>
+			<p> Slider en js </p>
+		</div>
+	</div>
 </section>

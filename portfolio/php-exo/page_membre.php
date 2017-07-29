@@ -6,7 +6,7 @@ session_start();
 // si l'utilisateur est connecté, on l'accueille avec un message de salutation personnalisée
 if (isset($_SESSION['login'], $_SESSION['mdp'])) {
 	echo "<h1> Bienvenue dans votre page membre, " .$_SESSION['login']. "! </h1>";
-	echo '<a href="logout.php"> Se déconnecter </a>';
+	echo '<a href="logout.php" class="btn btn-danger"> Se déconnecter </a>';
 }
 
 ?>
@@ -20,9 +20,7 @@ if (isset($_SESSION['login'], $_SESSION['mdp'])) {
 	<link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
 </head>
 <body>
-	<ul>
-		<li> <a href="read.php" class="btn btn-primary"> Liste des randonnées </a> </li>
-		<li> <a href="create.php" class="btn btn-primary"> Ajouter une nouvelle randonnée </a> </li>
-	</ul>
+	<a href="read.php" class="btn btn-primary"> Liste des randonnées </a>
+	<a href="create.php" class="btn btn-primary"> Ajouter une nouvelle randonnée </a>
 </body>
 </html>

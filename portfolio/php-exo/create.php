@@ -4,6 +4,10 @@ session_start();
 
 include("database.php");
 
+if (isset($_SESSION['login'], $_SESSION['mdp'])) {
+	echo '<a href="logout.php" class="btn btn-danger" style="margin-left: 15px; margin-top: 20px;"> Se déconnecter </a>';
+}
+
 $randonnees = $bdd->query('SELECT * FROM hiking');
 
 if (isset($_POST['name'],$_POST['difficulty'], $_POST['distance'], $_POST['duration'], $_POST['height_difference'], $_POST['available'], $_POST['button'])) {
@@ -17,7 +21,7 @@ if (isset($_POST['name'],$_POST['difficulty'], $_POST['distance'], $_POST['durat
 		
 	$req->execute(array($name, $difficulty, $distance, $duration, $height_difference, $available));
 
-	echo "La randonnée a été ajoutée avec succès.";
+	echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert">&times;</button>La randonnée a été ajoutée avec succès.</div>';
 }
 
 ?>
@@ -32,8 +36,8 @@ if (isset($_POST['name'],$_POST['difficulty'], $_POST['distance'], $_POST['durat
 	<link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
 </head>
 <body>
-	<a href="read.php" class="btn btn-primary">Liste des données</a>
-	<h1>Ajouter</h1>
+	<a href="read.php" class="btn btn-primary" style="margin-left: 15px; margin-top: 20px;">Liste des données</a>
+	<h1 style="margin-left: 15px;">Ajouter</h1>
 	<form action="" method="post" class="col-md-6">
 		<div class="form-group">
 			<label for="name">Name</label>
@@ -72,5 +76,8 @@ if (isset($_POST['name'],$_POST['difficulty'], $_POST['distance'], $_POST['durat
 		</div>
 		<button type="submit" name="button" class="btn btn-primary">Envoyer</button>
 	</form>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>

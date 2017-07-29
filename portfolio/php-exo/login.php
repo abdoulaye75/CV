@@ -16,8 +16,7 @@ if (isset($_POST['username'], $_POST['password'], $_POST['button'])) {
 
     // si les identifiants de l'utilisateur ne figurent pas dans la base de données, on empêche la connexion et on le propose de s'inscrire
     if (!$connecteduser) {
-      echo "Utilisateur inconnu ! Vérifiez bien votre identifiant et votre mot de passe !";
-      echo '<a href="signup.php"> S\'inscrire </a>';
+      echo '<div class="alert alert-danger alert-dismissable"><button type="button" class="close" data-dismiss="alert">&times;</button>Utilisateur inconnu ! Vérifiez bien votre identifiant et votre mot de passe ! <a href="signup.php" class="alert-link"> S\'inscrire </a></div>';
     }
     else { // sinon, la session peut démarrer et l'utilisateur peut accéder à sa page membre personnelle
       session_start();
@@ -40,9 +39,9 @@ if (isset($_POST['username'], $_POST['password'], $_POST['button'])) {
     <link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
   </head>
   <body>
-    <a href="index.php" class="btn btn-primary"> Retour à l'accueil </a>
+    <a href="index.php" class="btn btn-primary" style="margin-top: 25px; display: table; margin-left: 15px;"> Retour à l'accueil </a>
 
-    <form action="" method="post" class="col-md-6">
+    <form action="" method="post" class="col-md-6" style="margin-top: 50px;">
       <div class="form-group">
         <label for="username">Identifiant</label>
         <input type="text" name="username" required class="form-control">
@@ -55,5 +54,8 @@ if (isset($_POST['username'], $_POST['password'], $_POST['button'])) {
 
         <button type="submit" name="button" class="btn btn-primary">Se connecter</button>
     </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>

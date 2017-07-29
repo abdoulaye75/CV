@@ -29,8 +29,8 @@ if (isset($_POST['username'], $_POST['password'], $_POST['button'])) {
   <link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
 </head>
 <body>
-	<a href="index.php" class="btn btn-primary"> Retour à l'accueil </a>
-  <form action="" method="post" class="col-md-6">
+	<a href="index.php" class="btn btn-primary" style="margin-top: 25px; display: table; margin-left: 15px;"> Retour à l'accueil </a>
+  <form action="" method="post" class="col-md-6" style="margin-top: 50px;">
 		<div class="form-group">
         <label for="username">Identifiant :</label>
         <input type="text" name="username" required class="form-control">

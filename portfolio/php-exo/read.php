@@ -9,10 +9,15 @@
     <link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
   </head>
   <body>
-    <h1>Liste des randonnées</h1> <a href="create.php" class="btn btn-primary"> Ajouter une nouvelle randonnée </a> <br> <br>
+    <h1 style="margin-left: 15px;margin-bottom: 15px;">Liste des randonnées</h1>
+    <a href="create.php" class="btn btn-primary" style="margin-left: 15px;margin-bottom: 15px;"> Ajouter une nouvelle randonnée </a> 
     <?php
 
       include("database.php");
+
+      if (isset($_SESSION['login'], $_SESSION['mdp'])) {
+        echo '<a href="logout.php" class="btn btn-danger" style="margin-left: 15px; margin-top: 20px;"> Se déconnecter </a>';
+      }
 
       $randonnees = $bdd->query('SELECT * FROM hiking');
 

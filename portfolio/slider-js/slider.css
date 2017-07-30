@@ -12,3 +12,9 @@ p {
 	text-align: center;
 	font-size: 1.25em;
 }
+
+div {
+	display: flex;
+	justify-content: space-around;
+	margin-top: -10px;
+}

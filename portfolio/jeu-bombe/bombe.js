@@ -1,8 +1,6 @@
 let score = 0;
-let highestScore = document.getElementById("highestScore");
 let x = document.getElementById("button-to-catch");
 let nbPoints = document.getElementById("score");
-highestScore.innerHTML = "Record actuel : " + localStorage.score; // pour conserver le record actuel
 
 x.addEventListener("click", function() { // une fonction qui, au clic du bouton, fait déplacer le bouton ailleurs
 x.style.left = Math.floor((Math.random()*450) + 1) + "px"; /* Pour cela, utiliser la propriété style
@@ -14,10 +12,6 @@ nbPoints.innerHTML = score += 10; // on rajoute 10 points à chaque clic dans le
 
 x.addEventListener("animationend", function() { // le message de défaite à la fin de l'animation
 		alert("Trop lent !");
-		if (score > localStorage.score) {
-			localStorage.score = score; // affichage du record
-		}
-		highestScore.innerHTML = "Record actuel : " + localStorage.score;
 });
 
 function replay() {

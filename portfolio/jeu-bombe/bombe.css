@@ -42,7 +42,7 @@ body {
 	transition: all .1.5s ease-in-out;
 } /* l'animation répétée */
 
-.points, .minuteur, .record {
+.points, .minuteur {
 	text-align: center;
 	font-weight: bold;
 	font-size: 24px;

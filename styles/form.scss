@@ -20,6 +20,11 @@
     padding: 20px;
     opacity: 0.3;
 
+    form {
+        width: 50%;
+        margin: auto;
+    }
+
     i {
         font-size: 40px;
         display: none;
@@ -65,9 +70,9 @@
     }
 
     button[type=reset] {
-    	@include button(#FF0000, #fff, 12px 20px, 1px solid #FF0000, 4px, pointer);
+    	@include button(#D54439, #fff, 12px 20px, 1px solid #D54439, 4px, pointer);
 
-	    &:hover {@include hover(#fff, #FF0000, 1px solid #FF0000, 0.3s);}
+	    &:hover {@include hover(#fff, #D54439, 1px solid #D54439, 0.3s);}
     }
 
     .alert {

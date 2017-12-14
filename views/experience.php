@@ -1,5 +1,17 @@
 <section id="timeline" class="timeline-container">
 	<div class="timeline-block">
+		<p class="date"> Octobre 2017 - aujourd'hui </p>
+		<div class="timeline-content">
+			<h2> Développeur fullstack chez Idelyo </h2>
+			<ul>
+				<li> Mise en place du site inzee.care en Bootstrap, PHP procédural et MySQL </li>
+				<li> Test des différents serveurs et relevé de bugs à corriger </li>
+				<li> Travail sur le référencement de inzee.care pour éviter de référencer les liens des différents serveurs </li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="timeline-block">
 		<p class="date"> Juin 2017 - Juillet 2017 </p>
 		<div class="timeline-content">
 			<h2> Développeur web stagiaire chez Be Relax </h2>

@@ -8,7 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="styles/profile.css">
 	<link rel="stylesheet" type="text/css" href="styles/skills.css">
 	<link rel="stylesheet" type="text/css" href="styles/experience.css">
-	<link rel="stylesheet" type="text/css" href="styles/degree.css">
 	<link rel="stylesheet" type="text/css" href="styles/hobbies.css">
 	<link rel="stylesheet" type="text/css" href="styles/portfolio.css">
 	<link rel="stylesheet" type="text/css" href="styles/form.css">
